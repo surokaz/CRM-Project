@@ -168,6 +168,24 @@ $(function(){
 	$('.button-added-lead').click(function(){
 		$('#modal-add-lead').modal('show');
 	});
+//Добавить лида существующего из базы
+
+	$('.button-added-lead-base').click(function(){
+		$('#modal-add-lead-base').modal('show');
+		$('#modal-add-lead-base').on('shown.bs.modal', function(){
+			//Скролл добавления клиентов
+			$('.list-find-clients').mCustomScrollbar({
+				theme:'rounded-dark',
+				scrollbarPosition: "inside",
+				autoHideScrollbar:false,
+				scrollButtons:{enable: true },
+				scrollTo: "right"
+
+
+			});
+		});
+		
+	});
 
 
 
@@ -2508,16 +2526,6 @@ function displayRightArrowScrool() {
 	}
 }
 
-//Установка длины контейнера шахматки
-// var widthContainer = 0; // вычисляемая переменная длины контейнера
-
-// function containerWidth() {
-// 	$('.line-shah:first-child').children().each(function(){
-// 		widthContainer += $(this).outerWidth(true);
-// 	});
-// 	$('.wrap-floor').width(widthContainer);
-// }
-// containerWidth();
 
 function visibleElementRight() {
 	var countAllElem = $('.line-shah:nth-child(2)').children();
@@ -2747,6 +2755,10 @@ $('#file-type-group').change(function(){
 		} 
 	}
 });
+
+
+
+
 
 //main	
 });

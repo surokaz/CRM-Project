@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRM Admin</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&amp;subset=cyrillic" rel="stylesheet"> -->
+	<link rel="stylesheet" media="screen" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" media="screen" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" media="screen" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body class="admin-page">
+<div class="start_page">
+	<div class="container-fluid">
+		<div class="row">
+		<div class='nav'>
+			<button class="nav_trigger"><img src='img/hamurger_icon.png'></button>
+			<ul>
+				<li class="active"><a href='admin_1.html' title="Шахматка"><img src='img/chess_icon.png'><span>Шахматка</span></a></li>
+				<li><a href='clients.html' title="Клиенты и лиды" ><img src='img/clients_icon.png'><span>Клиенты и лиды</span></a></li>
+				<li><a href='projects.html' title="Проекты"><img src='img/projects_icon.png'><span>Проекты</span></a></li>
+				<li><a href='#'><img src='img/report_icon.png'><span>Отчеты</span></a></li>
+				<li><a href='settings.html' title="Настройки" ><img src='img/settings_icon.png'><span>Настройки</span></a></li>
+				<li><a href='news.html'><img src='img/news_icon.png'><span>Новости</span></a></li>
+				<li><a href="users.html" title="Пользователи"><i class="fas fa-user-plus"></i><span>Пользователи</span></a></li>
+			</ul>
+		</div>
+		</div>
+		<div class='row '>
+			<div class="col-12 no-padding">
+				<div class='header'>
+					<div class="left">
+						<button type="button" data-toggle="collapse" data-target="#filter_collapse" aria-expanded="false" aria-controls="filter_collapse" class="button-top collapsed">
+							Фильтр <i class="fas fa-chevron-down"></i>
+						</button>
+						<button type="button" data-toggle="collapse" data-target="#project_collapse" aria-expanded="false" aria-controls="collapse" class="button-top collapsed">
+							Проект <i class="fas fa-chevron-down"></i>
+						</button>
+					</div>
+					<div class="center">
+						<div class="lead-worked">
+							<div class="lead-worked-text">Лид в работе <span>Михаил 0953453344</span></div>
+							<button class="close-lead"><i class="far fa-window-close"></i></button>
+						</div>
+					</div>
+					<div class="right">
+						
+						<div class="currency-course">
+							<span class="currency-text">Курс доллара:</span>
+							<span class="currency-sum">
+								<span class="course-up"><i class="fas fa-arrow-up"></i></span>
+							26,50
+								<span class="course-down"><i class="fas fa-arrow-down"></i></span>
+							</span>
+							
+								
+						</div>
+
+						<div class="params">
+							<button type="button" data-toggle="collapse" data-target="#param_collapse" aria-expanded="false" aria-controls="param_collapse" class="collapsed">
+								Параметры <i class="fas fa-sliders-h"></i>
+							</button>
+						</div>
+						<div class="user">
+							<img src="img/user1.jpg">
+						</div>
+						
+					</div>
+				</div>
+				<div class="dropdowns">
+					<div class="filter_collapse collapse" id="filter_collapse">
+						<div class="card card-body">
+							<div class="view_filter">
+								<h3>Вид</h3>
+								<button type="button" class="filter-button" ><i class="fas fa-bars"></i></button>
+								<button type="button"  class="filter-button"><i class="far fa-eye-slash"></i></button>
+								<button type="button"  class="filter-button">Статусы</button>
+								<button type="button" class="filter-button">Цены</button>
+							</div>
+							<div class="price_filter">
+								<h3>Стоимость <span>тыс в UAH</span></h3>
+								<input type="text" placeholder="от"  class="input-text filter-button">
+								<input type="text" placeholder="до"  class="input-text filter-button">
+								<button type="button"  class="filter-button">
+									<span class="icon-grivna"></span>
+								</button>
+								<button type="button" class="filter-button selected"><i class="fas fa-dollar-sign"></i></button>
+								
+							</div>
+							<div class="price2_filer">
+								<h3>Цена за 1 кв.м. <span>UAH</span></h3>
+								<input type="text" placeholder="от" class="input-text">
+								<input type="text" placeholder="до" class="input-text">
+							</div>
+							<div class="rooms_filer">
+								<h3>Комнаты</h3>
+								<button type="button" class="filter-button">1</button>
+								<button type="button" class="filter-button">2</button>
+								<button type="button" class="filter-button">3</button>
+								<button type="button" class="filter-button">4</button>
+								<button type="button" class="filter-button">>4</button>
+							</div>
+							<div class="sq_filer">
+								<h3>Площадь<span>м&#178;</span></h3>
+								<input type="text" placeholder="от" class="input-text">
+								<input type="text" placeholder="до" class="input-text">
+							</div>
+							<div class="floor_filter">
+								<h3>Этаж</h3>
+								<input type="text" placeholder="от" class="input-text">
+								<input type="text" placeholder="до" class="input-text">
+							</div>
+							<button class="button-mediumblue">
+									Применить
+								</button>
+						</div>
+					</div>
+					<div class="project_collapse collapse" id="project_collapse">
+						<div class="card card-body">
+							<div class="thumb">
+								<img src="img/project1_thumb.jpg">
+							</div>
+							<div class="name">
+								<h3>Проект:</h3>
+								<select>
+									<option>ЖК "Комфорт таун", Регенераторная 4</option>
+									<option>ЖК "Комфорт таун", Регенераторная 10</option>
+								</select>
+							</div>
+							<div class="building">
+								<h3>Здание в выбранном проекте:</h3>
+								<select>
+									<option>КОРПУС 1</option>
+									<option>КОРПУС 2</option>
+									<option>КОРПУС 3</option>
+									<option>КОРПУС 4</option>
+								</select>
+							</div>
+							<div class="sector">
+								<h3>Подъезд в выбранном здании:</h3>
+								<p><button  class="filter-button">1</button><span>8 кв 2018г.</span></p>
+								<p><button  class="filter-button">2</button><span>8 кв 2018г.</span></p>
+							</div>
+							<button class="button-mediumblue">
+									Применить
+								</button>
+						</div>
+					</div>
+					
+					<div class="param_collapse collapse" id="param_collapse">
+						<div class="card card-body">
+							<div class="left">
+								<h3>Проект: <span>ЖК "Комфорт таун", Регенераторная 4</span></h3>
+								<div class="description">
+									<ul>
+										<li><span>38,2<span class="measure">кв.м.</span></span><span class='right_align'><span class="measure">квартира</span>1-комн.</span></li>
+										<li><span>13 500<span class="measure">грн. кв.м.</span></span><span class='right_align'><span class="measure">этаж</span>5/9</span></li>
+										<li><span>525,015<span class="measure">грн.</span></span><span class='right_align'><span class="measure"></span>~ 20 000 дол.</span></li>
+									</ul>
+								</div>
+								<div class="create_setup">
+									<h3>История</h3>
+									<ul class="create_setup_history">
+										<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+										<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+										<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+										<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+										<li><a href="users.html" title="Пользователи"><i class="fas fa-user-plus"></i><span>Пользователи</span></a></li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="middle">
+								<a href='#' class="link">Ссылка<i class="fas fa-link"></i></a>
+								<h3>Заинтересованные</h3>
+								<ul class="curiosity-leads">
+									<li>
+										<div class="user">
+											<img src="img/user2.jpg">
+										</div>
+										<div class="text">
+										<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+
+										</div>
+										<a  class="dots" href ='#'><img src='img/dots.png'></a>
+										<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+									</li>
+									<li>
+										<div class="user">
+											<img src="img/user2.jpg">
+										</div>
+										<div class="text">
+										<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+										</div>
+										<a  class="dots" href ='#'><img src='img/dots.png'></a>
+										<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+									</li>
+								</ul>
+								<div class="row-button">
+									<button type="button" class="task-button-element button-added-lead">
+										<i class="far fa-plus-square"></i> Добавить лида
+									</button>
+									<button type="button" class="task-button-element button-added-lead-base">
+										<i class="far fa-plus-square"></i> Прикрепить лида
+									</button>
+									
+								</div>
+								
+								<div class="sdelka">
+									<h3>Сделка</h3>
+								<ul>
+									<li>
+										<div class="user">
+											<img src="img/user2.jpg">
+										</div>
+										<div class="text">
+											<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+										</div>
+										<a  class="dots" href ='#'><img src='img/dots.png'></a>
+										
+									</li>	
+									
+								</ul>
+								<div class="params-sdelki">
+									<div>Сумма сделки: <span class="sum-sdelki">15 000$</span></div>
+									<div>Дата сделки: <span class="date-sdelki">25.06.2018</span></div>
+									<div>Где <span class="adress-sdelki">ЖК "Комфорт таун", Регенераторная 4</span>
+									</div>
+								</div>
+								</div>
+								
+							</div>
+							<div class="right">
+								<select class="selectric">
+									<option value="free">Свободна</option>
+									<option value="barter">Бартер</option>
+									<option value="booking">Бронь</option>
+									<option value="sale">Продано</option>
+									<option value="no-sale">Не продавать</option>
+								</select>
+								<div class="gallery-block">
+									<div class="row">
+										<div class="col-6">
+											<h3>Галерея</h3>
+										</div>
+										<div class="col-6">
+											<div class="block-file">
+												<label for="download-file-gallery-2" class="file-download-label"><i class="far fa-plus-square"></i>Добавить в галерею</label>
+												<input name="download-file-gallery" id="download-file-gallery-2"  class="file-download-input" type="file">
+											</div>			
+										</div>
+										<div class="col-12">
+											<div class="wrap-gallery wrap-gallery-admin">
+												<a data-fancybox="gallery" href="img/big-house.jpg"><img src="img/big-house.jpg"></a>
+												<a data-fancybox="gallery" href="img/big-house2.jpg"><img src="img/big-house2.jpg"></a>
+												<a data-fancybox="gallery" href="img/big-house3.jpg"><img src="img/big-house3.jpg"></a>
+												<a data-fancybox="gallery" href="img/big-house4.jpg"><img src="img/big-house4.jpg"></a>
+												<a data-fancybox="gallery" href="img/big-house5.jpg"><img src="img/big-house5.jpg"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								
+								
+								<div class="task-block">
+									
+									<h3 class="title-block">Текущие задачи</h3>
+									<div class="custom-control custom-checkbox all-task-control">
+									  <input type="checkbox" class="custom-control-input all-task-input" id="all-task-input">
+									  <label class="custom-control-label all-task-label" for="all-task-input">Все задачи</label>
+									</div>
+									<button id="add-new-task" class="task-button-element"  data-toggle="modal" data-target="#modal-add-task"  title="Добавить задачу"><i class="far fa-plus-square"></i> Добавить задачу</button>
+									
+
+									
+									<ol class="list-group list-task">
+										<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+											<div class="task-wrap">
+												<div class="row-task-control">
+													<div class="custom-control custom-checkbox task-custom-checkbox">
+														<input type="checkbox" class="custom-control-input task-input" id="task-individ-4">
+														<label class="custom-control-label task-label" for="task-individ-4"></label>
+													</div>
+													<a class="title-task-collapse" data-toggle="collapse" href="#task-desc-4" role="button" aria-expanded="false" aria-controls="collapseExample">
+														<span class="title-task"> Задача 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, </span>
+														<span class="date-task">27.06.2018</span>
+														<i class="fas fa-arrow-circle-down"></i>
+													</a>
+												</div>
+												
+												<div class="collapse task-description" id="task-desc-4">
+													<div class="column-control-task">
+														<button type="button" class="task-button-element" data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+													</div>
+												<div class="colunmn-task">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+													<div class="file-task">
+														<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner" ><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+														<div class="row-file-task">
+															<a class="file-link-download" href="#">
+																<i class="far fa-file"></i>
+																<span class="text-link-download">
+																	Имя файла длинное длинное длинннннннннннноооое
+																</span>
+															</a>
+															<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+														</div>
+														<div class="row-file-task">
+															<a class="file-link-download" href="#">
+																<i class="far fa-file"></i>
+																<span class="text-link-download">
+																	Имя файла 
+																</span>
+															</a>
+															<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+														</div>	
+													</div>
+														<div class="description-user-task">
+															<div class="user-task user-task-added">
+																<span class="status-user-task">
+																	Поставил задачу:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+															<div class="user-task-current">
+																<span class="status-user-task">
+																	Выполняет:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+															<div class="user-task-close">
+																<span class="status-user-task">
+																	Выполнил:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+														</div>
+														</div>
+													</div>
+													
+												</div>
+											</li>
+											<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+											<div class="task-wrap">
+												<div class="row-task-control">
+													<div class="custom-control custom-checkbox task-custom-checkbox">
+														<input type="checkbox" class="custom-control-input task-input" id="task-individ-3">
+														<label class="custom-control-label task-label" for="task-individ-3"></label>
+													</div>
+													<a class="title-task-collapse" data-toggle="collapse" href="#task-desc-3" role="button" aria-expanded="false" aria-controls="collapseExample">
+														<span class="title-task"> Задача 3 </span>
+														<span class="date-task">20.06.2018</span>
+														<i class="fas fa-arrow-circle-down"></i>
+													</a>
+												</div>
+												<div class="collapse task-description" id="task-desc-3">
+														<div class="column-control-task">
+															<button type="button" class="task-button-element" data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+														</div>
+														<div class="colunmn-task">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+														<div class="file-task">
+															<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner"><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+															<div class="row-file-task">
+																<a class="file-link-download" href="#">
+																	<i class="far fa-file"></i>
+																	<span class="text-link-download">
+																		Имя файла длинное длинное длинннннннннннноооое
+																	</span>
+																</a>
+																<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+															</div>
+															<div class="row-file-task">
+																<a class="file-link-download" href="#">
+																	<i class="far fa-file"></i>
+																	<span class="text-link-download">
+																		Имя файла 
+																	</span>
+																</a>
+																<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+															</div>	
+														</div>
+														<div class="description-user-task">
+															<div class="user-task user-task-added">
+																<span class="status-user-task">
+																	Поставил задачу:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+															<div class="user-task-current">
+																<span class="status-user-task">
+																	Выполняет:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+															<div class="user-task-close">
+																<span class="status-user-task">
+																	Выполнил:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+														</div>
+														</div>
+													</div>
+													
+												</div>
+											</li>
+											<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+											<div class="task-wrap">
+												<div class="row-task-control">
+													<div class="custom-control custom-checkbox task-custom-checkbox">
+														<input type="checkbox" class="custom-control-input task-input" id="task-individ-2">
+														<label class="custom-control-label task-label" for="task-individ-2"></label>
+													</div>
+													<a class="title-task-collapse" data-toggle="collapse" href="#task-desc-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+														<span class="title-task"> Задача 2 </span>
+														<span class="date-task">27.06.2018</span>
+														<i class="fas fa-arrow-circle-down"></i>
+													</a>
+												</div>
+												
+												<div class="collapse task-description" id="task-desc-2">
+													<div class="column-control-task">
+														<button class="task-button-element"  data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+													</div>
+													<div class="colunmn-task">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+													<div class="file-task">
+														<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner"><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+														<div class="row-file-task">
+															<a class="file-link-download" href="#">
+																<i class="far fa-file"></i>
+																<span class="text-link-download">
+																	Имя файла длинное длинное длинннннннннннноооое
+																</span>
+															</a>
+															<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+														</div>
+														<div class="row-file-task">
+															<a class="file-link-download" href="#">
+																<i class="far fa-file"></i>
+																<span class="text-link-download">
+																	Имя файла 
+																</span>
+															</a>
+															<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+														</div>	
+													</div>
+													<div class="description-user-task">
+														<div class="user-task user-task-added">
+															<span class="status-user-task">
+																Поставил задачу:
+															</span>
+															<span class="user-task-name" >
+																Филипок	
+															</span>
+															<span class="user-task-date">
+																12.06.2018
+															</span>
+														</div>
+														<div class="user-task-current">
+															<span class="status-user-task">
+																Выполняет:
+															</span>
+															<span class="user-task-name" >
+																Филипок	
+															</span>
+															<span class="user-task-date">
+																12.06.2018
+															</span>
+														</div>
+														<div class="user-task-close">
+															<span class="status-user-task">
+																Выполнил:
+															</span>
+															<span class="user-task-name" >
+																Филипок	
+															</span>
+															<span class="user-task-date">
+																12.06.2018
+															</span>
+														</div>
+													</div>
+													</div>
+												</div>
+													
+												</div>
+											</li>
+										
+									</ol>
+								</div>
+								
+							</div>
+							
+							
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="shahmatka">
+		<div class="container">
+			<div class="row">
+				<h2>ЖК “Комфорт таун”, Регенераторная 4</h2>
+			</div>
+		</div>
+		
+	
+	<div class="visible-content">
+		<div class="wrap-floor">
+			
+			<div class="line-shah">
+				<div class="item-floor"> 
+					<div class="number-floor number-floor-9">
+						<span>9</span>
+						<p>этаж</p>
+					</div>
+					<div class="floor-units">
+						<span class="floor-units-count">10</span>
+						<p>юнитов</p>
+						
+					</div>
+				
+				</div>
+				<div class="item-shah">
+					<div class="item-line" >
+						<div class="area-item area-all-first">34,90<span>кв.м</span></div>
+						<span class="number-flat number-flat-1">1</span>
+						<div class="number-item">№1</div>
+					</div>
+					<div class="item-line">
+						<span>Общая: </span><div class="area-item area-all"><span class="area-num">34,90</span><span>кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<span>Жилая: </span><div class="area-item area-live"><span class="area-num">34,90</span><span>кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<span>Кухня: </span><div class="area-item area-kitchen"><span class="area-num">34,90</span><span>кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-m2"><span class="sum-price"> 12 500</span><span>за кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-all"><span class="sum-price">850 000</span><span>грн</span></div>
+					
+						<div class="currence-switcher">
+							<button type="button"  class="filter-button grivna selected">
+								<span class="icon-grivna"></span>
+							</button>
+							<button type="button" class="filter-button dollar"><i class="fas fa-dollar-sign"></i></button>
+						</div>
+					</div>
+					<div class="item-line attr-item attr-item-2">
+						<span>Доп. параметр</span>
+						<span>зеленый</span>
+					</div>
+					<div class="item-line attr-item attr-item-3">
+						<span>Доп. параметр</span>
+						<span>33</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="line-item-status status-free sun">
+						<span class="item-status"></span>
+						<span class="text-status">Свободна</span>
+						<span class="side-sun"><i class="fas fa-sun"></i></span>
+					
+					</div>
+					<div class="edit-item-line">
+						<button class="button-edit-item" data-toggle="modal" data-target="#elem-params-1">
+									<i class="fas fa-eye"></i>
+						</button>
+					</div>
+					<!-- Параметры квартиры -->
+					<div class="modal modal-parametrs-unit" tabindex="-1" role="dialog" id="elem-params-1" aria-labelledby="#elem-params-1" aria-hidden="true">
+					  <div class="" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title">Параметры квартиры №1</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+
+						<div class="param_collapse " id="">
+							<div class="card card-body">
+								<div class="left">
+									<h3>Проект: <span>ЖК "Комфорт таун", Регенераторная 4</span></h3>
+									<div class="description">
+										<ul>
+											<li><span>38,2<span class="measure">кв.м.</span></span><span class='right_align'><span class="measure">квартира</span>1-комн.</span></li>
+											<li><span>13 500<span class="measure">грн. кв.м.</span></span><span class='right_align'><span class="measure">этаж</span>5/9</span></li>
+											<li><span>600,015<span class="measure">грн.</span></span><span class='right_align'><span class="measure"></span>~ 20 000 дол.</span></li>
+										</ul>
+									</div>
+									<div class="create_setup">
+										<h3>История</h3>
+										<ul class="create_setup_history">
+											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											
+										</ul>
+									</div>
+								</div>
+								<div class="middle">
+									<a href='#' class="link">Ссылка<i class="fas fa-link"></i></a>
+									<h3>Заинтересованные</h3>
+									<ul class="curiosity-leads">
+										<li>
+											<div class="user">
+												<img src="img/user2.jpg">
+											</div>
+											<div class="text">
+											<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+
+											</div>
+											<a  class="dots" href ='#'><img src='img/dots.png'></a>
+											<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+										</li>
+										<li>
+											<div class="user">
+												<img src="img/user2.jpg">
+											</div>
+											<div class="text">
+											<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+											</div>
+											<a  class="dots" href ='#'><img src='img/dots.png'></a>
+											<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+										</li>
+									</ul>
+									<div class="row-button">
+										<button type="button" class="task-button-element button-added-lead">
+											<i class="far fa-plus-square"></i> Добавить лида
+										</button>
+										<button type="button" class="task-button-element button-added-lead-base">
+										<i class="far fa-plus-square"></i> Прикрепить лида
+									</button>
+										
+									</div>
+								
+									<div class="sdelka">
+										<h3>Сделка</h3>
+									<ul>
+										<li>
+											<div class="user">
+												<img src="img/user2.jpg">
+											</div>
+											<div class="text">
+												<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+											</div>
+											<a  class="dots" href ='#'><img src='img/dots.png'></a>
+											
+										</li>	
+										
+									</ul>
+									<div class="params-sdelki">
+										<div>Сумма сделки: <span class="sum-sdelki">15 000$</span></div>
+										<div>Дата сделки: <span class="date-sdelki">25.06.2018</span></div>
+										<div>Где <span class="adress-sdelki">ЖК "Комфорт таун", Регенераторная 4</span>
+										</div>
+									</div>
+									</div>
+									
+								</div>
+								<div class="right">
+									<select class="selectric">
+										<option value="free">Свободна</option>
+										<option value="barter">Бартер</option>
+										<option value="booking">Бронь</option>
+										<option value="sale">Продано</option>
+										<option value="no-sale">Не продавать</option>
+									</select>
+									<div class="gallery-block">
+										<div class="row">
+											<div class="col-6">
+												<h3>Галерея</h3>
+											</div>
+											<div class="col-6">
+												<div class="block-file">
+													<label for="flat-1-download-file-gallery" class="file-download-label"><i class="far fa-plus-square"></i>Добавить в галерею</label>
+													<input name="download-file-gallery" id="flat-1-download-file-gallery"  class="file-download-input" type="file">
+												</div>			
+											</div>
+											<div class="col-12">
+												<div class="wrap-gallery wrap-gallery-admin">
+													<a data-fancybox="gallery" href="img/big-house.jpg"><img src="img/big-house.jpg"></a>
+													<a data-fancybox="gallery" href="img/big-house2.jpg"><img src="img/big-house2.jpg"></a>
+													<a data-fancybox="gallery" href="img/big-house3.jpg"><img src="img/big-house3.jpg"></a>
+													<a data-fancybox="gallery" href="img/big-house4.jpg"><img src="img/big-house4.jpg"></a>
+													<a data-fancybox="gallery" href="img/big-house5.jpg"><img src="img/big-house5.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="task-block">
+										
+										<h3 class="title-block">Текущие задачи</h3>
+										<div class="custom-control custom-checkbox all-task-control">
+										  <input type="checkbox" class="custom-control-input all-task-input" id="flat-1-all-task-input">
+										  <label class="custom-control-label all-task-label" for="flat-1-all-task-input">Все задачи</label>
+										</div>
+										<button id="flat-1-add-new-task" class="task-button-element"  data-toggle="modal" data-target="#modal-add-task"  title="Добавить задачу"><i class="far fa-plus-square"></i> Добавить задачу</button>
+										
+
+									
+										<ol class="list-group list-task">
+											<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+												<div class="task-wrap">
+													<div class="row-task-control">
+														<div class="custom-control custom-checkbox task-custom-checkbox">
+															<input type="checkbox" class="custom-control-input task-input" id="flat-1-task-individ-4">
+															<label class="custom-control-label task-label" for="flat-1-task-individ-4"></label>
+														</div>
+														<a class="title-task-collapse" data-toggle="collapse" href="#flat-1-task-desc-4" role="button" aria-expanded="false" aria-controls="collapseExample">
+															<span class="title-task"> Задача 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, </span>
+															<span class="date-task">27.06.2018</span>
+															<i class="fas fa-arrow-circle-down"></i>
+														</a>
+													</div>
+													
+													<div class="collapse task-description" id="flat-1-task-desc-4">
+														<div class="column-control-task">
+															<button type="button" class="task-button-element" data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+														</div>
+													<div class="colunmn-task">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+														<div class="file-task">
+															<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner" ><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+															<div class="row-file-task">
+																<a class="file-link-download" href="#">
+																	<i class="far fa-file"></i>
+																	<span class="text-link-download">
+																		Имя файла длинное длинное длинннннннннннноооое
+																	</span>
+																</a>
+																<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+															</div>
+															<div class="row-file-task">
+																<a class="file-link-download" href="#">
+																	<i class="far fa-file"></i>
+																	<span class="text-link-download">
+																		Имя файла 
+																	</span>
+																</a>
+																<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+															</div>	
+														</div>
+															<div class="description-user-task">
+																<div class="user-task user-task-added">
+																	<span class="status-user-task">
+																		Поставил задачу:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+																<div class="user-task-current">
+																	<span class="status-user-task">
+																		Выполняет:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+																<div class="user-task-close">
+																	<span class="status-user-task">
+																		Выполнил:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+															</div>
+															</div>
+														</div>
+														
+													</div>
+												</li>
+												<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+												<div class="task-wrap">
+													<div class="row-task-control">
+														<div class="custom-control custom-checkbox task-custom-checkbox">
+															<input type="checkbox" class="custom-control-input task-input" id="flat-1-task-individ-3">
+															<label class="custom-control-label task-label" for="flat-1-task-individ-3"></label>
+														</div>
+														<a class="title-task-collapse" data-toggle="collapse" href="#flat-1-task-desc-3" role="button" aria-expanded="false" aria-controls="collapseExample">
+															<span class="title-task"> Задача 3 </span>
+															<span class="date-task">20.06.2018</span>
+															<i class="fas fa-arrow-circle-down"></i>
+														</a>
+													</div>
+													<div class="collapse task-description" id="flat-1-task-desc-3">
+															<div class="column-control-task">
+																<button type="button" class="task-button-element" data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+															</div>
+															<div class="colunmn-task">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+															<div class="file-task">
+																<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner"><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+																<div class="row-file-task">
+																	<a class="file-link-download" href="#">
+																		<i class="far fa-file"></i>
+																		<span class="text-link-download">
+																			Имя файла длинное длинное длинннннннннннноооое
+																		</span>
+																	</a>
+																	<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																</div>
+																<div class="row-file-task">
+																	<a class="file-link-download" href="#">
+																		<i class="far fa-file"></i>
+																		<span class="text-link-download">
+																			Имя файла 
+																		</span>
+																	</a>
+																	<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																</div>	
+															</div>
+															<div class="description-user-task">
+																<div class="user-task user-task-added">
+																	<span class="status-user-task">
+																		Поставил задачу:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+																<div class="user-task-current">
+																	<span class="status-user-task">
+																		Выполняет:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+																<div class="user-task-close">
+																	<span class="status-user-task">
+																		Выполнил:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+															</div>
+															</div>
+														</div>
+														
+													</div>
+												</li>
+												<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+												<div class="task-wrap">
+													<div class="row-task-control">
+														<div class="custom-control custom-checkbox task-custom-checkbox">
+															<input type="checkbox" class="custom-control-input task-input" id="flat-1-task-individ-2">
+															<label class="custom-control-label task-label" for="flat-1-task-individ-2"></label>
+														</div>
+														<a class="title-task-collapse" data-toggle="collapse" href="#flat-1-task-desc-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+															<span class="title-task"> Задача 2 </span>
+															<span class="date-task">27.06.2018</span>
+															<i class="fas fa-arrow-circle-down"></i>
+														</a>
+													</div>
+													
+													<div class="collapse task-description" id="flat-1-task-desc-2">
+														<div class="column-control-task">
+															<button class="task-button-element"  data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+														</div>
+														<div class="colunmn-task">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+														<div class="file-task">
+															<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner"><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+															<div class="row-file-task">
+																<a class="file-link-download" href="#">
+																	<i class="far fa-file"></i>
+																	<span class="text-link-download">
+																		Имя файла длинное длинное длинннннннннннноооое
+																	</span>
+																</a>
+																<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+															</div>
+															<div class="row-file-task">
+																<a class="file-link-download" href="#">
+																	<i class="far fa-file"></i>
+																	<span class="text-link-download">
+																		Имя файла 
+																	</span>
+																</a>
+																<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+															</div>	
+														</div>
+														<div class="description-user-task">
+															<div class="user-task user-task-added">
+																<span class="status-user-task">
+																	Поставил задачу:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+															<div class="user-task-current">
+																<span class="status-user-task">
+																	Выполняет:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+															<div class="user-task-close">
+																<span class="status-user-task">
+																	Выполнил:
+																</span>
+																<span class="user-task-name" >
+																	Филипок	
+																</span>
+																<span class="user-task-date">
+																	12.06.2018
+																</span>
+															</div>
+														</div>
+														</div>
+													</div>
+														
+													</div>
+												</li>
+											
+										</ol>
+									</div>
+									
+								</div>
+								
+								
+							</div>
+						</div>
+
+
+						</div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!--Конец Параметры сделки -->
+				</div>
+				<div class="item-shah">
+					<div class="item-line" >
+						<div class="area-item">34,90<span>кв.м</span></div>
+						<span class="number-flat number-flat-2">2</span>
+						<div class="number-item">№2</div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-m2">12 500<span>за кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-all">850 000<span>грн</span></div>
+					
+						<div class="currence-switcher">
+							<button type="button"  class="filter-button grivna selected">
+								<span class="icon-grivna"></span>
+							</button>
+							<button type="button" class="filter-button dollar "><i class="fas fa-dollar-sign"></i></button>
+						</div>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="line-item-status status-lease">
+						<span class="item-status"></span>
+						<span class="text-status">Арендуется</span>
+						<span class="side-sun"><i class="fas fa-sun"></i></span>
+						
+					</div>
+					<div class="edit-item-line">
+						<button class="button-edit-item" data-toggle="modal" data-target="#elem-params-2">
+									<i class="fas fa-eye"></i>
+						</button>
+					</div>
+					<!-- Параметры квартиры -->
+					<div class="modal modal-parametrs-unit" tabindex="-1" role="dialog" id="elem-params-2" aria-labelledby="#elem-params-2" aria-hidden="true">
+					  <div class="" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title">Параметры квартиры №2</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+
+							<div class="param_collapse " id="">
+								<div class="card card-body">
+									<div class="left">
+										<h3>Проект: <span>ЖК "Комфорт таун", Регенераторная 4</span></h3>
+										<div class="description">
+											<ul>
+												<li><span>38,2<span class="measure">кв.м.</span></span><span class='right_align'><span class="measure">квартира</span>1-комн.</span></li>
+												<li><span>13 500<span class="measure">грн. кв.м.</span></span><span class='right_align'><span class="measure">этаж</span>5/9</span></li>
+												<li><span>525,015<span class="measure">грн.</span></span><span class='right_align'><span class="measure"></span>~ 20 000 дол.</span></li>
+											</ul>
+										</div>
+										<div class="create_setup">
+											<h3>История</h3>
+											<ul>
+												<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+												<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+												<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+												<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+												
+											</ul>
+										</div>
+									</div>
+									<div class="middle">
+										<a href='#' class="link">Ссылка<i class="fas fa-link"></i></a>
+										<h3>Заинтересованные</h3>
+										<ul class="curiosity-leads">
+											<li>
+												<div class="user">
+													<img src="img/user2.jpg">
+												</div>
+												<div class="text">
+												<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+
+												</div>
+												<a  class="dots" href ='#'><img src='img/dots.png'></a>
+												<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+											</li>
+											<li>
+												<div class="user">
+													<img src="img/user2.jpg">
+												</div>
+												<div class="text">
+												<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+												</div>
+												<a  class="dots" href ='#'><img src='img/dots.png'></a>
+												<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+											</li>
+										</ul>
+										<div class="row-button">
+											<button type="button" class="task-button-element button-added-lead">
+												<i class="far fa-plus-square"></i> Добавить лида
+											</button>
+											<button type="button" class="task-button-element button-added-lead-base">
+										<i class="far fa-plus-square"></i> Прикрепить лида
+									</button>
+											
+										</div>
+									
+										<div class="sdelka">
+											<h3>Сделка</h3>
+										<ul>
+											<li>
+												<div class="user">
+													<img src="img/user2.jpg">
+												</div>
+												<div class="text">
+													<p class="name">Андрей Касабов</p><p class="question">вопрос цены</p>
+												</div>
+												<a  class="dots" href ='#'><img src='img/dots.png'></a>
+												
+											</li>	
+											
+										</ul>
+										<div class="params-sdelki">
+											<div>Сумма сделки: <span class="sum-sdelki">15 000$</span></div>
+											<div>Дата сделки: <span class="date-sdelki">25.06.2018</span></div>
+											<div>Где <span class="adress-sdelki">ЖК "Комфорт таун", Регенераторная 4</span>
+											</div>
+										</div>
+										</div>
+										
+									</div>
+									<div class="right">
+										<select class="selectric">
+											<option value="free">Свободна</option>
+											<option value="barter">Бартер</option>
+											<option value="booking">Бронь</option>
+											<option value="sale">Продано</option>
+											<option value="no-sale">Не продавать</option>
+										</select>
+										<div class="gallery-block">
+											<div class="row">
+												<div class="col-6">
+													<h3>Галерея</h3>
+												</div>
+												<div class="col-6">
+													<div class="block-file">
+														<label for="flat-2-download-file-gallery-1" class="file-download-label"><i class="far fa-plus-square"></i>Добавить в галерею</label>
+														<input name="download-file-gallery" id="flat-2-download-file-gallery-1"  class="file-download-input" type="file">
+													</div>			
+												</div>
+												<div class="col-12">
+													<div class="wrap-gallery wrap-gallery-admin">
+														<a data-fancybox="gallery" href="img/big-house.jpg"><img src="img/big-house.jpg"></a>
+														<a data-fancybox="gallery" href="img/big-house2.jpg"><img src="img/big-house2.jpg"></a>
+														<a data-fancybox="gallery" href="img/big-house3.jpg"><img src="img/big-house3.jpg"></a>
+														<a data-fancybox="gallery" href="img/big-house4.jpg"><img src="img/big-house4.jpg"></a>
+														<a data-fancybox="gallery" href="img/big-house5.jpg"><img src="img/big-house5.jpg"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+										
+										
+										<div class="task-block">
+										
+											<h3 class="title-block">Текущие задачи</h3>
+											<div class="custom-control custom-checkbox all-task-control">
+											  <input type="checkbox" class="custom-control-input all-task-input" id="flat-2-all-task-input">
+											  <label class="custom-control-label all-task-label" for="flat-2-all-task-input">Все задачи</label>
+											</div>
+											<button id="flat-2-add-new-task" class="task-button-element"  data-toggle="modal" data-target="#modal-add-task"  title="Добавить задачу"><i class="far fa-plus-square"></i> Добавить задачу</button>
+											
+
+										
+											<ol class="list-group list-task">
+												<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+													<div class="task-wrap">
+														<div class="row-task-control">
+															<div class="custom-control custom-checkbox task-custom-checkbox">
+																<input type="checkbox" class="custom-control-input task-input" id="flat-2-task-individ-4">
+																<label class="custom-control-label task-label" for="flat-2-task-individ-4"></label>
+															</div>
+															<a class="title-task-collapse" data-toggle="collapse" href="#flat-2-task-desc-4" role="button" aria-expanded="false" aria-controls="collapseExample">
+																<span class="title-task"> Задача 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, </span>
+																<span class="date-task">27.06.2018</span>
+																<i class="fas fa-arrow-circle-down"></i>
+															</a>
+														</div>
+														
+														<div class="collapse task-description" id="flat-2-task-desc-4">
+															<div class="column-control-task">
+																<button type="button" class="task-button-element" data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+															</div>
+														<div class="colunmn-task">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+															<div class="file-task">
+																<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner" ><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+																<div class="row-file-task">
+																	<a class="file-link-download" href="#">
+																		<i class="far fa-file"></i>
+																		<span class="text-link-download">
+																			Имя файла длинное длинное длинннннннннннноооое
+																		</span>
+																	</a>
+																	<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																</div>
+																<div class="row-file-task">
+																	<a class="file-link-download" href="#">
+																		<i class="far fa-file"></i>
+																		<span class="text-link-download">
+																			Имя файла 
+																		</span>
+																	</a>
+																	<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																</div>	
+															</div>
+																<div class="description-user-task">
+																	<div class="user-task user-task-added">
+																		<span class="status-user-task">
+																			Поставил задачу:
+																		</span>
+																		<span class="user-task-name" >
+																			Филипок	
+																		</span>
+																		<span class="user-task-date">
+																			12.06.2018
+																		</span>
+																	</div>
+																	<div class="user-task-current">
+																		<span class="status-user-task">
+																			Выполняет:
+																		</span>
+																		<span class="user-task-name" >
+																			Филипок	
+																		</span>
+																		<span class="user-task-date">
+																			12.06.2018
+																		</span>
+																	</div>
+																	<div class="user-task-close">
+																		<span class="status-user-task">
+																			Выполнил:
+																		</span>
+																		<span class="user-task-name" >
+																			Филипок	
+																		</span>
+																		<span class="user-task-date">
+																			12.06.2018
+																		</span>
+																	</div>
+																</div>
+																</div>
+															</div>
+															
+														</div>
+													</li>
+													<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+													<div class="task-wrap">
+														<div class="row-task-control">
+															<div class="custom-control custom-checkbox task-custom-checkbox">
+																<input type="checkbox" class="custom-control-input task-input" id="flat-2-task-individ-3">
+																<label class="custom-control-label task-label" for="flat-2-task-individ-3"></label>
+															</div>
+															<a class="title-task-collapse" data-toggle="collapse" href="#flat-2-task-desc-3" role="button" aria-expanded="false" aria-controls="collapseExample">
+																<span class="title-task"> Задача 3 </span>
+																<span class="date-task">20.06.2018</span>
+																<i class="fas fa-arrow-circle-down"></i>
+															</a>
+														</div>
+														<div class="collapse task-description" id="flat-2-task-desc-3">
+																<div class="column-control-task">
+																	<button type="button" class="task-button-element" data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+																</div>
+																<div class="colunmn-task">
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+																<div class="file-task">
+																	<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner"><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+																	<div class="row-file-task">
+																		<a class="file-link-download" href="#">
+																			<i class="far fa-file"></i>
+																			<span class="text-link-download">
+																				Имя файла длинное длинное длинннннннннннноооое
+																			</span>
+																		</a>
+																		<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																	</div>
+																	<div class="row-file-task">
+																		<a class="file-link-download" href="#">
+																			<i class="far fa-file"></i>
+																			<span class="text-link-download">
+																				Имя файла 
+																			</span>
+																		</a>
+																		<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																	</div>	
+																</div>
+																<div class="description-user-task">
+																	<div class="user-task user-task-added">
+																		<span class="status-user-task">
+																			Поставил задачу:
+																		</span>
+																		<span class="user-task-name" >
+																			Филипок	
+																		</span>
+																		<span class="user-task-date">
+																			12.06.2018
+																		</span>
+																	</div>
+																	<div class="user-task-current">
+																		<span class="status-user-task">
+																			Выполняет:
+																		</span>
+																		<span class="user-task-name" >
+																			Филипок	
+																		</span>
+																		<span class="user-task-date">
+																			12.06.2018
+																		</span>
+																	</div>
+																	<div class="user-task-close">
+																		<span class="status-user-task">
+																			Выполнил:
+																		</span>
+																		<span class="user-task-name" >
+																			Филипок	
+																		</span>
+																		<span class="user-task-date">
+																			12.06.2018
+																		</span>
+																	</div>
+																</div>
+																</div>
+															</div>
+															
+														</div>
+													</li>
+													<li class="task-item list-group-item list-group-item-action list-group-item-danger">
+													<div class="task-wrap">
+														<div class="row-task-control">
+															<div class="custom-control custom-checkbox task-custom-checkbox">
+																<input type="checkbox" class="custom-control-input task-input" id="flat-2-task-individ-2">
+																<label class="custom-control-label task-label" for="flat-2-task-individ-2"></label>
+															</div>
+															<a class="title-task-collapse" data-toggle="collapse" href="#flat-2-task-desc-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+																<span class="title-task"> Задача 2 </span>
+																<span class="date-task">27.06.2018</span>
+																<i class="fas fa-arrow-circle-down"></i>
+															</a>
+														</div>
+														
+														<div class="collapse task-description" id="flat-2-task-desc-2">
+															<div class="column-control-task">
+																<button class="task-button-element"  data-toggle="modal" data-target="#modal-edit-task" title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
+															</div>
+															<div class="colunmn-task">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab earum, qui provident voluptates quod temporibus. Voluptate officia, expedita reiciendis magni repellendus non iste molestias. Fugit, neque odit veniam voluptates.</p>
+															<div class="file-task">
+																<button class="add-file-task-button task-button-element" data-toggle="modal" data-target="#modal-add-task-file-inner"><i class="fas fa-upload"></i>Добавить файл в задачу</button>
+																<div class="row-file-task">
+																	<a class="file-link-download" href="#">
+																		<i class="far fa-file"></i>
+																		<span class="text-link-download">
+																			Имя файла длинное длинное длинннннннннннноооое
+																		</span>
+																	</a>
+																	<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																</div>
+																<div class="row-file-task">
+																	<a class="file-link-download" href="#">
+																		<i class="far fa-file"></i>
+																		<span class="text-link-download">
+																			Имя файла 
+																		</span>
+																	</a>
+																	<button type='button' title="Удалить файл" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+																</div>	
+															</div>
+															<div class="description-user-task">
+																<div class="user-task user-task-added">
+																	<span class="status-user-task">
+																		Поставил задачу:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+																<div class="user-task-current">
+																	<span class="status-user-task">
+																		Выполняет:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+																<div class="user-task-close">
+																	<span class="status-user-task">
+																		Выполнил:
+																	</span>
+																	<span class="user-task-name" >
+																		Филипок	
+																	</span>
+																	<span class="user-task-date">
+																		12.06.2018
+																	</span>
+																</div>
+															</div>
+															</div>
+														</div>
+															
+														</div>
+													</li>
+												
+											</ol>
+										</div>
+										
+									</div>
+									
+									
+								</div>
+							</div>
+
+
+						</div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!--Конец Параметры квартиры -->
+				</div>
+				<div class=" item-shah"> 
+					<div class="item-line">
+						<div class="area-item">34,90<span>кв.м</span></div>
+						<span class="number-flat number-flat-3">3</span>
+						<div class="number-item">№1</div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-m2">12 500<span>за кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-all">850 000<span>грн</span></div>
+					
+						<div class="currence-switcher">
+							<button type="button"  class="filter-button grivna selected">
+								<span class="icon-grivna"></span>
+							</button>
+							<button type="button" class="filter-button dollar "><i class="fas fa-dollar-sign"></i></button>
+						</div>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="line-item-status sun status-barter">
+						<span class="item-status"></span>
+						<span class="text-status">Бартер</span>
+						<span class="side-sun"><i class="fas fa-sun"></i></span>
+						
+					</div>
+					<div class="edit-item-line">
+						<button class="button-edit-item" data-toggle="modal" data-target="#elem-params-3">
+									<i class="fas fa-eye"></i>
+						</button>
+					</div>
+				</div>
+				<div class="item-shah"> 
+					<div class="item-line">
+						<div class="area-item">34,90<span>кв.м</span></div>
+						<span class="number-flat number-flat-4">4</span>
+						<div class="number-item">№1</div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-m2">12 500<span>за кв.м</span></div>
+					</div>
+					<div class="item-line">
+						<div class="price-area price-area-all">850 000<span>грн</span></div>
+					
+						<div class="currence-switcher">
+							<button type="button"  class="filter-button grivna selected">
+								<span class="icon-grivna"></span>
+							</button>
+							<button type="button" class="filter-button dollar "><i class="fas fa-dollar-sign"></i></button>
+						</div>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="item-line attr-item">
+						<span>Доп. параметр</span>
+					</div>
+					<div class="line-item-status sun status-sale">
+						<span class="item-status"></span>
+						<span class="text-status">Продана</span>
+						<span class="side-sun"><i class="fas fa-sun"></i></span>
+					</div>
+					<div class="edit-item-line">
+						<button class="button-edit-item" data-toggle="modal" data-target="#elem-params-4">
+									<i class="fas fa-eye"></i>
+						</button>
+					</div>
+				</div>
+				<div class=" item-shah"> block 6</div>
+				<div class=" item-shah"> block 7</div>
+				<div class=" item-shah"> block 8</div>
+				<div class=" item-shah"> block 9</div>
+				<div class=" item-shah"> block 10</div>
+				<div class=" item-shah"> block 11</div>
+				<div class=" item-shah"> block 12</div>
+				<div class=" item-shah"> block 13</div>
+				<div class=" item-shah"> block 14</div>
+				<div class=" item-shah"> block 15</div>
+				<div class=" item-shah"> block 16</div>
+				<div class=" item-shah"> block 17</div>
+				<div class=" item-shah"> block 18</div>
+				<div class=" item-shah"> block 19</div>
+				<div class=" item-shah"> block 20</div>
+			</div>
+			<div class="line-shah">		
+				<div class="item-floor"> 
+					<div class="number-floor number-floor-8">
+						<span>8</span>
+						<p>этаж</p>
+					</div>
+					<div class="floor-units">
+						
+						<span class="floor-units-count">100</span>
+						<p>юнитов</p>
+					</div>
+				
+				</div>
+				<div class=" item-shah"> block 2</div>
+				<div class=" item-shah"> block 3</div>
+				<div class=" item-shah"> block 4</div>
+				<div class=" item-shah"> block 5</div>
+				<div class=" item-shah"> block 6</div>
+				<div class=" item-shah"> block 7</div>
+				<div class=" item-shah"> block 8</div>
+				<div class=" item-shah"> block 9</div>
+				<div class=" item-shah"> block 10</div>
+				<div class=" item-shah"> block 11</div>
+				<div class=" item-shah"> block 12</div>
+				<div class=" item-shah"> block 13</div>
+				<div class=" item-shah"> block 14</div>
+				<div class=" item-shah"> block 15</div>
+				<div class=" item-shah"> block 16</div>
+				<div class=" item-shah"> block 17</div>
+				<div class=" item-shah"> block 18</div>
+				<div class=" item-shah"> block 19</div>
+				<div class=" item-shah"> block 20</div>
+			</div>
+			<div class="line-shah">		
+				<div class="item-floor"> 
+					<div class="number-floor number-floor-7">
+						<span>7</span>
+						<p>этаж</p>
+					</div>
+				
+				</div>
+				<div class=" item-shah"> block 2</div>
+				<div class=" item-shah"> block 3</div>
+				<div class=" item-shah"> block 4</div>
+				<div class=" item-shah"> block 5</div>
+				<div class=" item-shah"> block 6</div>
+				<div class=" item-shah"> block 7</div>
+				<div class=" item-shah"> block 8</div>
+				<div class=" item-shah"> block 9</div>
+				<div class=" item-shah"> block 10</div>
+				<div class=" item-shah"> block 11</div>
+				<div class=" item-shah"> block 12</div>
+				<div class=" item-shah"> block 13</div>
+				<div class=" item-shah"> block 14</div>
+				<div class=" item-shah"> block 15</div>
+				<div class=" item-shah"> block 16</div>
+				<div class=" item-shah"> block 17</div>
+				<div class=" item-shah"> block 18</div>
+				<div class=" item-shah"> block 19</div>
+				<div class=" item-shah"> block 20</div>
+			</div>		
+				
+				
+			</div>
+		</div>
+		
+	</div>
+	
+
+</div>
+	<div class="arrow-container-scrool">
+		
+			<div class="arrow-l">
+				<i class="fas fa-angle-double-left"></i>
+			</div>
+		
+			<div class="arrow-r">
+				<i class="fas fa-angle-double-right"></i>
+			</div>
+		
+	</div>
+
+</div>
+<footer>
+	
+
+
+</footer>
+<div class="modal fade modal-add-lead" id="modal-add-lead" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-lead">Имя</label>
+				<input type="text" class="form-control" id="name-modal-add-lead">
+			</div>
+			<div class="form-group">
+		    	<label for="phone-modal-add-lead">Телефон</label>
+		    	<input type="text" class="form-control" id="phone-modal-add-lead">
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="email-modal-add-lead">Email</label>
+		    	<input type="text" class="form-control" id="email-modal-add-lead">
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="email-modal-add-lead">Статус</label>
+		    	<select class="custom-select select-modal">
+				  <option selected>Выберите статус</option>
+				  <option value="1">Последний разговор состоялся</option>
+				  <option value="2">Мониторинг цен, неконкретный</option>
+				  <option value="3">Стпрашивает по домам, отвечаем</option>
+				  <option value="4">Есть шорт-лист квартир</option>
+				  <option value="5">Переговоры по конкурентным квартирам</option>
+				</select>
+		  	</div>
+		  	<div class="form-group">
+				<p>Дата: <span>25.06.2018</span></p>
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-lead" id="modal-add-lead-base" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead-base" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-lead">Введите Имя, фамилию или телефон для поиска</label>
+				<input type="text" class="form-control" id="name-modal-add-lead">
+			</div>
+			<div class="form-group">
+		    	<div class="list-find-clients">
+		    		<div class="find-client">
+		    			<p>Андрей Касабов</p>
+		    			<div class="phone-find-client"><span>Тел:</span>+398-097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Последний разговор состоялся</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Максим Немаксим</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Петрович</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Лукьянов</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Петрович</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Лукьянов</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Петрович</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+		    		<div class="find-client">
+		    			<p>Лукьянов</p>
+		    			<div class="phone-find-client"><span>Тел:</span>097-777-88-55</div>
+		    			<div class="email-find-client"><span>Email:</span>mail.longlongmail$gmail.com</div>
+		    			<div class="status-find-client"><span>Статус:</span>Клиент</div>
+		    		</div>
+
+		    	</div>
+		  	</div>
+		 
+		</form>
+	  </div>
+	  <div class="modal-footer">
+	  	<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+		<button type="button" class="btn btn-primary">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-edit-task" id="modal-edit-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-task" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Редактирование задачи</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи</label>
+				<input type="text" class="form-control" id="edit-task-title">
+			</div>
+			<div class="form-group">
+		    	<label for="edit-task-descr">Описание задачи</label>
+		    	<textarea class="form-control" id="edit-task-descr" rows="3"></textarea>
+		  	</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task" id="modal-add-task" tabindex="-1" role="dialog" aria-labelledby="modal-add-task" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить новую задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи*</label>
+				<input type="text" class="form-control" required="required" placeholder="Введите Заголовок задачи" id="edit-task-title">
+			</div>
+			<div class="form-group">
+		    	<label for="edit-task-descr">Описание задачи*</label>
+		    	<textarea class="form-control" required="required" id="edit-task-descr" placeholder="Описание задачи" rows="3"></textarea>
+		  	</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл(ы) к задаче</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task-file-inner" id="modal-add-task-file-inner" tabindex="-1" role="dialog" aria-labelledby="modal-add-task-file-inner" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить файл(ы) в задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			
+			<div class="form-group">
+				<label for="edit-task-file">Выберите один или несколько файлов</label>
+				<input type="file" multiple class="form-control-file" id="add-task-file-inner">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="modal-remove-file-task" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Точно удалить файл?</p>
+        <form>
+        	<input type="hidden" id="file-removing">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modal-remove-file-task-button" class="btn btn-primary">Да</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/js.js" ></script>
+</body>
+</html>
