@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRM Settings</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&amp;subset=cyrillic" rel="stylesheet"> -->
+	<link rel="stylesheet" media="screen" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" media="screen" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" media="screen" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" media="screen, projection" href="style.css">
+</head>
+<body class="settings">
+<div class="start_page">
+	<div class="container-fluid">
+		<div class="row">
+		<div class='nav'>
+			<button class="nav_trigger"><img src='img/hamurger_icon.png'></button>
+			<ul>
+				<li><a href='admin_1.html' title="Шахматка"><img src='img/chess_icon.png'><span>Шахматка</span></a></li>
+				<li><a href='clients.html'  title="Клиенты и лиды"><img src='img/clients_icon.png'><span>Клиенты и лиды</span></a></li>
+				<li><a href='projects.html' title="Проекты"><img src='img/projects_icon.png'><span>Проекты</span></a></li>
+				<li><a href='#'><img src='img/report_icon.png'><span>Отчеты</span></a></li>
+				<li class="active"><a href='settings.html' title="Настройки"><img src='img/settings_icon.png'><span>Настройки</span></a></li>
+				<li><a href='news.html'><img src='img/news_icon.png'><span>Новости</span></a></li>
+				<li><a href="users.html" title="Пользователи"><i class="fas fa-user-plus"></i><span>Пользователи</span></a></li>
+			</ul>
+		</div>
+		</div>
+		<div class='row '>
+			<div class="col-12 no-padding">
+				<div class='header'>
+					<div class="left">
+						
+					</div>
+					<div class="center">
+						<!-- <div class="lead-worked">
+							<div class="lead-worked-text">
+							Лид в работе <span>Михаил 0953453344</span>
+							</div>
+							<button class="close-lead"><i class="far fa-window-close"></i></button>
+						</div> -->
+					</div>
+					<div class="right">
+						
+						<div class="currency-course">
+							<span class="currency-text">Курс доллара:</span>
+							<span class="currency-sum">
+								<span class="course-up"><i class="fas fa-arrow-up"></i></span>
+							26,50
+								<span class="course-down"><i class="fas fa-arrow-down"></i></span>
+							</span>
+							
+								
+						</div>
+
+						
+						<div class="user">
+							<img src="img/user1.jpg">
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<div class="container">
+		<div class="row">
+			<h6>Настройки компании</h6>
+		</div>
+
+		
+	
+		<div class="row no-gutters">
+			<div class="col">
+				<div class="column-settings">
+					<h4>Статусы юнитов</h4>
+					<form class="form-units-status-add">
+						<div class="form-row">
+						<div class="form-group col-7">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+						</div>
+						<div class="form-group col-5">
+							<select class="custom-select select-site">
+							  <option value="1" selected >Не в продаже</option>
+							  <option value="2">В продаже</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-5">
+							<label> Выберите цвет
+								<input type="color" class="input-color" >
+							</label>
+						</div>
+						<div class="form-group col-7 text-right">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+
+						</div>
+					  </div>
+					</form>
+					<ul class="current-status-settings current-status-unit">
+						<li>
+							<div class="status-settings status-unit-1">
+								<span class="status-color" style="background-color: #e64848;"></span>
+								Не продавать
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-2">
+								<span class="status-color" style="background-color: #e64848;"></span>Бартер
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-3">
+								<span class="status-color" style="background-color: #e64848;"></span>Сотрудники
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-4">
+								<span class="status-color" style="background-color: #1ba89b;"></span>Свободна
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-5">
+								<span class="status-color" style="background-color: #ffee00;"></span>Бронь (3 дня)
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-6">
+								<span class="status-color" style="background-color: #ffee00;"></span>Бронь (7 дня)
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-7">
+								<span class="status-color" style="background-color: #ffee00;"></span>Бронь на сутки
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-8">
+								<span class="status-color" style="background-color: #bcbcbc;"></span>Продана
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-9">
+								<span class="status-color" style="background-color: #bcbcbc;"></span>Оплачен 100%
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-10">
+								<span class="status-color" style="background-color: #bcbcbc;"></span>Договор подписан
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="col">
+				<div class="column-settings">
+					<h4>Статусы лидов</h4>
+					<form>
+						<div class="form-row">
+						<div class="form-group col-7">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+						</div>
+						<div class="form-group col-5">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-12 text-left">
+							<button class="button-separator">Добавить разделитель <span>+</span></button>
+						</div>
+					  
+					  </div>
+					</form>
+					<ul class="current-status-settings current-status-lead">
+						<li>
+							<div class="status-settings status-lead-1 separator">
+								-- Воронка продажи --
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-2">
+								Последний разговор состоялся
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-3">
+								Мониторинг цен, неконкретный
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-4">
+								Стпрашивает по домам, отвечаем
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-5">
+								Есть шорт-лист квартир
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-6">
+								Переговоры по конкурентным квартирам
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-7">
+								-- Автоматические --
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-8">
+								Клиент
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-9">
+								Отменил сделку
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-lead-10">
+								Название
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="col">
+				<div class="column-settings">
+					<h4>Статусы сделки</h4>
+					<form >
+						<div class="form-row">
+						<div class="form-group col-7">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+						</div>
+						<div class="form-group col-5">
+							<label> Цвет
+								<input type="color" class="input-color" >
+							</label>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-5">
+							
+						</div>
+						<div class="form-group col-7 text-right">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+
+						</div>
+					  </div>
+					</form>
+					<ul class="current-status-settings current-status-unit">
+						<li>
+							<div class="status-settings status-unit-1">
+								<span class="status-color" style="background-color: #e64848;"></span>Переговоры
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						
+						
+						<li>
+							<div class="status-settings status-unit-5">
+								<span class="status-color" style="background-color: #ffee00;"></span>Показ
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-4">
+								<span class="status-color" style="background-color: #1ba89b;"></span>Согласование
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						
+						<li>
+							<div class="status-settings status-unit-8">
+								<span class="status-color" style="background-color: #bcbcbc;"></span>Аванс
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						<li>
+							<div class="status-settings status-unit-9">
+								<span class="status-color" style="background-color: #8080FF;"></span>Продано
+							</div>
+							<div class="div-control-status">
+								<button type="button" class="task-button-element element-edit-status"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+								<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+							</div>
+							<div class="wrap-input-control-element">
+								<div class="label-color-input"> 
+									<div class="label-color-text">Выберите цвет</div>
+									<div class="wrap-color-input">
+										<input type="color" class="input-color" >	
+									</div>
+								</div>
+								<input type="text" placeholder="Название статуса" class="input-edit-option">
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</li>
+						
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col-4">
+				<div class="column-settings column-settings-2">
+					<h4>Дополнительные поля сделки</h4>
+					<form >
+						<div class="form-row">
+						<div class="form-group col-6">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+						</div>
+						<div class="form-group col-6">
+							<select class="custom-select select-site">
+							  <option value="1" selected >Текст 1</option>
+							  <option value="2">Текст 2</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-5">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+						</div>
+					  
+					  </div>
+					</form>
+					<table class="table table-settings current-fields-deal">
+					  <thead>
+						<tr>
+						  <th scope="col">Название</th>
+						  <th scope="col">Тип</th>
+						  <th scope="col">Значения</th>
+						  <th scope="col"></th>
+						</tr>
+					  </thead>
+					 <tbody>
+						<tr>
+							<td>Основной прайс</td>
+							<td> - </td>
+							<td></td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						  <td>Рассрочка - октябрь</td>
+						  <td>Текст</td>
+						  <td></td>
+						  <td>
+						  	<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						
+					  </tbody>
+					</table>
+				
+				</div>	
+			</div>
+			<div class="col-4">
+				<div class="column-settings column-settings-2">
+					<h4>Дополнительные поля юниты</h4>
+					<form >
+						<div class="form-row">
+						<div class="form-group col-7">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+						</div>
+						<div class="form-group col-5">
+							<select class="custom-select select-site">
+							  <option value="1" selected >Текст 1</option>
+							  <option value="2">Текст 2</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-5">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+						</div>
+						<div class="form-group col-7 text-right">
+							
+
+						</div>
+					  </div>
+					</form>
+
+					<table class="table table-settings current-fields-deal">
+					  <thead>
+						<tr>
+						  <th scope="col">Название</th>
+						  <th scope="col">Тип</th>
+						  <th scope="col">Значения</th>
+						  <th scope="col"></th>
+						</tr>
+					  </thead>
+					   <tbody>
+						<tr>
+							<td>Тип планировки</td>
+							<td>Текст</td>
+							<td>Открытый</td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						  <td>Высота потолков</td>
+						  <td>Текст</td>
+						  <td>4 m</td>
+						  <td>
+						  	<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						
+						
+					  </tbody>
+					  
+					</table>
+				
+				</div>	
+			</div>
+			<div class="col-4">
+				<div class="column-settings column-settings-2">
+					<h4>Группы файлов (создание шахматки)</h4>
+					<form >
+						<div class="form-row">
+							<div class="form-group col-6">
+								<input type="text" class="form-control input-site"  placeholder="Название типа">
+							</div>
+							<div class="form-group col-6">
+						
+								<select class="custom-select select-site" placeholder="Системное имя">
+								  <option value="img" >Изображения</option>
+								  <option value="link">Ссылки</option>
+								  <option value="pdf">Pdf</option>
+								  <option value="doc">Word</option>
+								  <option value="xls">Excel</option>
+								</select>
+							</div>
+						</div>
+					  <div class="form-row">
+						
+						<div class="form-group col-7 text-right">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+						</div>
+					  </div>
+					</form>
+
+					<table class="table table-settings current-fields-deal">
+					  <thead>
+						<tr>
+						  <th scope="col">Название</th>
+						  <th scope="col">Система</th>
+						   <th scope="col"></th>
+						</tr>
+					  </thead>
+					   <tbody>
+						<tr>
+							<td>Изображения</td>
+							<td>img</td>
+							<td>
+								<div class="control-table">
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						  <td>Ссылки</td>
+						  <td>link</td>
+						  <td>
+						  	<div class="control-table">
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						<tr>
+						  <td>Pdf</td>
+						  <td>pdf</td>
+						  <td>
+						  	<div class="control-table">
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						<tr>
+						  <td>Word</td>
+						  <td>doc</td>
+						   <td>
+						  	<div class="control-table">
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						<tr>
+						  <td>Excel</td>
+						  <td>xls</td>
+						   <td>
+						  	<div class="control-table">
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						
+						
+					  </tbody>
+					  
+					</table>
+				
+				</div>	
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col-6">
+				<div class="column-settings column-settings-2 price-list">
+					<h4>Прайс листы</h4>
+					<form>
+						<div class="form-row">
+							<div class="form-group col-3">
+								<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название">
+							</div>
+						<div class="form-group col-3">
+							
+							
+							    <input type="text" class="form-control datepicker input-site" placeholder="Дата начала">
+							  
+							
+						</div>
+						<div class="form-group col-3">
+						
+							    <input type="text" class="form-control datepicker input-site" placeholder="Дата окончания">
+							    <!-- <div class="input-group-addon">
+							        <i class="far fa-calendar-alt"></i>
+							    </div> -->
+							
+						</div>
+						<div class="form-group col-3">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+						</div>
+					  </div>
+					 
+					</form>
+					<table class="table table-settings current-fields-deal">
+					  <thead class="text-center">
+						<tr>
+						  <th scope="col">Название</th>
+						  <th scope="col">Дата начала</th>
+						  <th scope="col">Дата окончания</th>
+						  <th scope="col">На основе</th>
+						  <th scope="col"></th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+							<td>Основной прайс</td>
+							<td> - </td>
+							<td> - </td>
+							<td>  </td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						  <td>Рассрочка - октябрь</td>
+						  <td>03.04.18</td>
+						  <td>03.04.19</td>
+						  <td></td>
+						  <td>
+						  	<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						
+					  </tbody>
+					</table>
+				</div>	
+			</div>
+			<div class="col-6">
+				<div class="column-settings column-settings-2">
+					<h4>Дополнительные поля - Лиды</h4>
+					<form >
+						<div class="form-row">
+						<div class="form-group col-4">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+						</div>
+						<div class="form-group col-4">
+							<select class="custom-select select-site">
+							  <option value="1" selected >Текст 1</option>
+							  <option value="2">Текст 2</option>
+							</select>
+						</div>
+						<div class="form-group col-4">
+							<button type="submit" class="button-mediumblue">Добавить</button>
+						</div>
+					  </div>
+					  <div class="form-row">
+						<div class="form-group col-5">
+							
+						</div>
+						<div class="form-group col-7 text-right">
+							
+
+						</div>
+					  </div>
+					</form>
+					<table class="table table-settings">
+					  <thead class="text-center">
+						<tr>
+						  <th scope="col">Название</th>
+						  <th scope="col">Тип</th>
+						  <th scope="col">Значение</th>
+						  <th scope="col"></th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+							<td>Рекл. группа</td>
+							<td>Выбор</td>
+							<td>tv / радио / наружка / интернет / мероприятия </td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						  <td>Рекл. источник</td>
+						  <td>Текст</td>
+						  <td>tv - CNN / tv - FoxNews / радио - BBC One / радио - Platinum / наружка - баннер на объекте / наружка - биллборд</td>
+						 <td>
+						  	<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						<tr>
+							<td>Препятсвие</td>
+							<td>Выбор</td>
+							<td>есть / нет </td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Встреча</td>
+							<td>Выбор</td>
+							<td>была / не было / затруднительна </td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Агенство недв.</td>
+							<td>Выбор</td>
+							<td> </td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Число</td>
+							<td> </td>
+							<td>
+								<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</td>
+						</tr>
+						
+					  </tbody>
+					</table>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</div>
+	
+
+<footer>
+	
+
+
+</footer>
+<div class="modal fade modal-add-lead" id="modal-add-lead" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Добавить лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-lead">Имя</label>
+				<input type="text" class="form-control" id="name-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="phone-modal-add-lead">Телефон</label>
+				<input type="text" class="form-control" id="phone-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Email</label>
+				<input type="text" class="form-control" id="email-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Статус</label>
+				<select class="custom-select select-modal">
+				  <option selected>Выберите статус</option>
+				  <option value="1">Последний разговор состоялся</option>
+				  <option value="2">Мониторинг цен, неконкретный</option>
+				  <option value="3">Стпрашивает по домам, отвечаем</option>
+				  <option value="4">Есть шорт-лист квартир</option>
+				  <option value="5">Переговоры по конкурентным квартирам</option>
+				</select>
+			</div>
+			<div class="form-group photo-user-add">
+				<div class="user-form">
+					<img src="img/default-user.jpg">
+				</div>
+				<div class="block-form-photo">
+					<label for="photo-modal-add-lead">Прикрепить фото клиента</label>
+					<input type="file" class="form-control-file" id="photo-modal-add-lead">
+				</div>
+			</div>
+			<div class="form-group">
+				
+			</div>
+			<div class="form-group">
+				<p>Дата: <span>25.06.2018</span></p>
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-edit-task" id="modal-edit-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Редактирование задачи</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи</label>
+				<input type="text" class="form-control" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи</label>
+				<textarea class="form-control" id="edit-task-descr" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task" id="modal-add-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Добавить новую задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи*</label>
+				<input type="text" class="form-control" required="required" placeholder="Введите Заголовок задачи" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи*</label>
+				<textarea class="form-control" required="required" id="edit-task-descr" placeholder="Описание задачи" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл(ы) к задаче</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task-file-inner" id="modal-add-task-file-inner" tabindex="-1" role="dialog" aria-labelledby="modal-add-task-file-inner" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Добавить файл(ы) в задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			
+			<div class="form-group">
+				<label for="edit-task-file">Выберите один или несколько файлов</label>
+				<input type="file" multiple class="form-control-file" id="add-task-file-inner">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="modal-remove-file-task" role="dialog">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<p>Точно удалить файл?</p>
+		<form>
+			<input type="hidden" id="file-removing">
+		</form>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" id="modal-remove-file-task-button" class="btn btn-primary">Да</button>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datepicker.ru.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/js.js" ></script>
+</body>
+</html>

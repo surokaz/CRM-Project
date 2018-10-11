@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRM</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&amp;subset=cyrillic" rel="stylesheet"> -->
+	<link rel="stylesheet" media="screen" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" media="screen" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" media="screen" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body class="create-shahmat-page">
+<div class="start_page">
+	<div class="container-fluid">
+		<div class="row">
+		<div class='nav'>
+			<button class="nav_trigger"><img src='img/hamurger_icon.png'></button>
+			<ul>
+				<li ><a href='admin_1.html' title="Шахматка"><img src='img/chess_icon.png'><span>Шахматка</span></a></li>
+				<li><a href='clients.html' title="Клиенты и лиды" ><img src='img/clients_icon.png'><span>Клиенты и лиды</span></a></li>
+				<li class="active"><a href='projects.html' title="Проекты"><img src='img/projects_icon.png'><span>Проекты</span></a></li>
+				<li><a href='#'><img src='img/report_icon.png'><span>Отчеты</span></a></li>
+				<li><a href='settings.html' title="Настройки" ><img src='img/settings_icon.png'><span>Настройки</span></a></li>
+				<li><a href='news.html'><img src='img/news_icon.png'><span>Новости</span></a></li>
+				<li><a href="users.html" title="Пользователи"><i class="fas fa-user-plus"></i><span>Пользователи</span></a></li>
+			</ul>
+		</div>
+		</div>
+		<div class='row '>
+			<div class="col-12 no-padding">
+				<div class='header'>
+					<div class="center">
+						<div class="wrap-ul-etap">
+							<ul>
+								<li class="passed"><span>Основа</span></li>
+								<li class="active"><span>Комнаты</span></li>
+								<li><span>Площадь</span></li>
+								<li><span>Нумерация</span></li>
+								<li><span>Цены</span></li>
+								<li><span>Изображения</span></li>
+								<li><span>Особенности</span></li>
+								<li><span>Опубликована</span></li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="right">
+						
+						
+						
+						<div class="user">
+							<img src="img/user1.jpg">
+						</div>
+						
+					</div>
+				</div>
+				<div class="dropdowns">
+					<div class="filter_collapse collapse" id="filter_collapse">
+						<div class="card card-body">
+							<div class="view_filter">
+								<h3>Вид</h3>
+								<button type="button" class="filter-button" ><i class="fas fa-bars"></i></button>
+								<button type="button"  class="filter-button"><i class="far fa-eye-slash"></i></button>
+								<button type="button"  class="filter-button">Статусы</button>
+								<button type="button" class="filter-button">Цены</button>
+							</div>
+							<div class="price_filter">
+								<h3>Стоимость <span>тыс в UAH</span></h3>
+								<input type="text" placeholder="от"  class="input-text filter-button">
+								<input type="text" placeholder="до"  class="input-text filter-button">
+								<button type="button"  class="filter-button">
+									<span class="icon-grivna"></span>
+								</button>
+								<button type="button" class="filter-button selected"><i class="fas fa-dollar-sign"></i></button>
+								
+							</div>
+							<div class="price2_filer">
+								<h3>Цена за 1 кв.м. <span>UAH</span></h3>
+								<input type="text" placeholder="от" class="input-text">
+								<input type="text" placeholder="до" class="input-text">
+							</div>
+							<div class="rooms_filer">
+								<h3>Комнаты</h3>
+								<button type="button" class="filter-button">1</button>
+								<button type="button" class="filter-button">2</button>
+								<button type="button" class="filter-button">3</button>
+								<button type="button" class="filter-button">4</button>
+								<button type="button" class="filter-button">>4</button>
+							</div>
+							<div class="sq_filer">
+								<h3>Площадь<span>м&#178;</span></h3>
+								<input type="text" placeholder="от" class="input-text">
+								<input type="text" placeholder="до" class="input-text">
+							</div>
+							<div class="floor_filter">
+								<h3>Этаж</h3>
+								<input type="text" placeholder="от" class="input-text">
+								<input type="text" placeholder="до" class="input-text">
+							</div>
+							<button class="button-mediumblue">
+									Применить
+								</button>
+						</div>
+					</div>
+					
+					
+			
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="block-creator">
+		<div class="container">
+				
+							<div class="row">
+								
+								<div class="col-4">
+									<!-- ID элемента span = ID проекта -->
+									<h3>Проект: <span id="pr2" class="name-project-creator">ЖК "Комфорт таун", Регенераторная 4</span></h3>
+								</div>
+								<div class="col-4">
+									<h3>Секция в выбранном проекте: <span id="s1" class="border-violet sections-creator section-id">A</span> </h3>
+								</div>
+								<div class="col-4">
+									<button type="button"  class="button-mediumblue  button-prev-etap">Назад</button>
+									<button type="button"  class="button-mediumblue button-next-etap">Далее</button>
+								</div>
+							</div>
+							<div class="row etap-creator etap-creator-1 current">
+								<div class="col-3 text-left">
+									<h5>1. Создайте основу шахматки</h5>
+									<div class="form-row">
+										<div class="form-group col-6">
+										  <label for="numFloorCreator">Этажей</label>
+										  <input type="text" class="form-control" id="numFloorCreator" placeholder="">
+										</div>
+										<div class="form-group col-6">
+										  <label for="numtUnitsCreator">Юнитов на этаже</label>
+										  <input type="text" class="form-control" id="numtUnitsCreator" placeholder="">
+										</div>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="nullFloorCreator">
+										<label class="form-check-label" for="nullFloorCreator">
+											Нулевой этаж
+										</label>
+										<button type="button" id="button-create-shahmatku"  class="button-mediumblue button-create-shahmatku">Создать шахматку</button>
+									</div>
+								</div>
+								<div class="col-3 text-left">
+									<h5>2. Редактирование шахматки</h5>
+									<div class="button-wrap-creator">
+										<h6>Объединение</h6>
+										<button id="gorizont-combine-button" class="button-link-grey gorizont-combine-button">
+											Горизонтальное
+										</button>
+										<button id="vertical-combine-button" class="button-link-grey vertical-combine-button">
+											Вертикальное
+										</button>
+
+									</div>
+									<div class="button-wrap-creator">
+										<h6>Разделение</h6>
+										<button id="gorizont-separate-button" class="button-link-grey gorizont-separate-button">
+											Горизонтальное
+										</button>
+										<button id="vertical-separate-button" class="button-link-grey vertical-separate-button">
+											Вертикальное
+										</button>
+
+									</div>
+								</div>
+								<div class="col-3 text-left">
+									<h5>3. Коммерческие площади</h5>
+									<div class="button-wrap-creator">
+										
+										<button id="button-commercial-sqare" class="button-link-grey button-commercial-sqare">
+											Отметить
+										</button>
+										<button id="button-notcommercial-sqare" class="button-link-grey button-notcommercial-sqare">
+											Убрать комерцию
+										</button>
+										
+
+									</div>
+									
+								</div>
+								<div class="col-3 text-left">
+										<div class="alert-block-message">	
+										</div>						
+								</div>
+								
+							</div>
+							<div class="row etap-creator etap-creator-2 hidden">
+								<div class="col-4 text-left">
+									<h5>Задайте количество жилых комнат</h5>
+									<p>Введите 1, 2, 3 для каждого юнита. Чтобы задать общее значение для столбца, используйте поле ввода над каждой из колонок.</p>
+									<p>Уникальное количество комнат задается непосредственно на юните.</p>
+									
+								</div>
+								<div class="col-3 text-left">
+									<h5>Статистика</h5>
+											<table class="table table-settings current-fields-deal table-statistika">
+												<thead>
+											  <tr>
+											   <td> Квартиры</td>
+											   <td> Количество</td>
+											  </tr>
+											 </thead>
+											  <tbody>
+												<tr>
+													<td>0</td>
+													<td>0</td>
+												</tr>
+												
+												
+											  </tbody>
+											</table>
+									
+								</div>
+								<div class="col-4 text-left">
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>	
+							<!-- Конец 2-го этапа, начало 3-го этапа   -->
+							<div class="row etap-creator etap-creator-3 hidden">
+								<div class="col-4 text-left">
+									<h5>Задайте площади помещений</h5>
+									<p>Общая площадь нужна для вычисления стоимости юнитов. Площадь кухни и жилая площадь – не обязательны для заполнения.</p>
+								</div>
+								<div class="col-4 text-left">
+									<button id="button-all-sqare-flat" class="button-link-grey button-all-sqare-flat active">
+											Общая
+									</button>
+									<button id="button-live-sqare-flat" class="button-link-grey button-live-sqare-flat">
+											Жилая
+									</button>
+									<button id="button-kitchen-sqare-flat" class="button-link-grey button-kitchen-sqare-flat">
+											Кухня
+									</button>
+								
+									
+								</div>
+								<div class="col-4 text-left">
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>
+							<!-- Конец 3-го этапа, начало 4-го этапа   -->
+							<div class="row etap-creator etap-creator-4 hidden">
+								<div class="col-4 text-left">
+									<h5>Нумерация</h5>
+									<label for="basic-url">от первой квартиры</label>
+									<div class="input-group mb-1">
+									  <div class="input-group-prepend">
+										<div class="input-group-text">
+										  <input type="checkbox" id="first-number-flat-chekcbox" class="form-control-sm" >
+										</div>
+									  </div>
+									  <input type="text" id="first-number-flat" class="form-control" >
+									</div>
+														
+									<div class="form-check mb-3">
+										<input class="form-check-input" id="input-skip-commerce" type="checkbox" value="" id="">
+										<label class="form-check-label" for="">
+											пропускать коммерческие
+										</label>
+										
+									</div>
+									<button id="button-numbering-flat" class="button-link-grey mb-1">
+											Нумеровать
+									</button>
+									
+								</div>
+								<div class="col-4 text-left">
+									<h5>Задайте номера квартир</h5>
+									<p>Используйте поля ввода над колонками. Далее эти значения будут использоваться при генерации id.</p>
+									
+									
+								</div>
+								
+								<div class="col-4 text-left">
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>
+							<!-- Конец 4-го этапа, начало 5-го этапа   -->
+							<div class="row etap-creator etap-creator-5 hidden">
+								<div class="col-4 text-left">
+									<h5>Цены</h5>
+									<p>Выберите прайс-лист, который хотите отредактировать. Введите цены 1 кв.м. или 1 сотки (для земельных участков).</p>
+
+								<select required="required" id="price-select" class="custom-select">
+									<option selected disabled>Основной прайс</option>
+									<option value="price1">Прайс 1</option>
+									<option value="price2">Прайс 2</option>
+									
+								</select>
+						
+									
+								</div>
+								<div class="col-4 text-left">
+									
+									<p>Если у каждой квартиры уникальная цена за кв.м. – используйте другой метод. Откройте эту Google Таблицу. Скопируйте из своего реестра цены квартир первого этажа и вставьте в первую колонку. Формула создаст строку цен, разделенных пробелами. Теперь вставьте данную строку в первую ячейку первого этажа. Повторите эти действия для всех этажей здания.</p>
+									
+									
+								</div>
+								
+								<div class="col-4 text-left">
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>
+							<!-- Конец 5-го этапа, начало 6-го этапа   -->
+							<div class="row etap-creator etap-creator-6 hidden">
+								<div class="col-2 text-left">
+									<h5>Фото</h5>
+									<span>Типы файлов</span>
+									<select required="required" id="file-type-group" class="custom-select">
+											<option selected value="img">Изображения</option>
+											<option value="link">Ссылки</option>
+											<option value="xls">Excel</option>
+											<option value="pdf">Pdf</option>
+											<option value="doc">Word</option>
+								
+										
+									</select>
+									<span>Название группы</span>
+									<select required="required" id="photo-group-select" class="custom-select">
+											<option selected value="group-1">планы 1</option>
+											<option value="group-2">Визуализация 1</option>
+											<option value="group-2">Визуализация 1</option>
+											<option selected value="group-1">планы 1</option>
+											<option value="group-2">Визуализация 1</option>
+											<option selected value="group-1">планы 1</option>
+								
+										
+									</select>
+									
+									
+									<div class="div-control-status">
+										<button type="button" id="create-group-photo" class="task-button-element" title="Добавить группу"><i class="far fa-plus-square"></i></button>
+										<button type="button" id="edit-group-photo" class="task-button-element" title="Редактировать группу"><i class="fas fa-pencil-alt"></i></button>
+										<button type="button" id="delete-group-photo" title="Удалить группу" class="task-button-element remove-group-button-element"><i class="fas fa-trash-alt"></i></button>
+									</div>
+									
+									
+								</div>
+								<div class="col-7 text-left">
+									
+									<div class="wrap-gallery wrap-gallery-admin gallery-image-etap view">
+													<a data-fancybox="gallery" href="img/big-house.jpg">
+														
+														<img src="img/big-house.jpg">
+														<button type='button' title="Выбрать" class="task-button-element check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house2.jpg">
+														
+														<img src="img/big-house2.jpg">
+
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house3.jpg">
+													
+														<img src="img/big-house3.jpg">
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house4.jpg">
+														
+														<img src="img/big-house4.jpg">
+														<button type='button' title="Выбрать" class="task-button-element check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house5.jpg">
+														
+														<img src="img/big-house5.jpg">
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house.jpg">
+														
+														<img src="img/big-house.jpg">
+														<button type='button' title="Выбрать" class="task-button-element check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house2.jpg">
+														
+														<img src="img/big-house2.jpg">
+
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house3.jpg">
+													
+														<img src="img/big-house3.jpg">
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house4.jpg">
+														
+														<img src="img/big-house4.jpg">
+														<button type='button' title="Выбрать" class="task-button-element check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house5.jpg">
+														
+														<img src="img/big-house5.jpg">
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house.jpg">
+														
+														<img src="img/big-house.jpg">
+														<button type='button' title="Выбрать" class="task-button-element check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house2.jpg">
+														
+														<img src="img/big-house2.jpg">
+
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house3.jpg">
+													
+														<img src="img/big-house3.jpg">
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house4.jpg">
+														
+														<img src="img/big-house4.jpg">
+														<button type='button' title="Выбрать" class="task-button-element check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house5.jpg">
+														
+														<img src="img/big-house5.jpg">
+														<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i></button>
+													</a>
+													
+													
+													
+												</div>
+												<div class="links-wrap-etap hidden">
+													<div class="col-6">
+														<div class="line-input">
+															<i class="fas fa-link"></i><input type="text" class="links-input">
+														</div>
+														<div class="line-input">
+															<i class="fas fa-link"></i><input type="text" class="links-input">
+														</div>
+														<div class="line-input">
+															<i class="fas fa-link"></i><input type="text" class="links-input">
+														</div>
+														
+													</div>
+													<div class="col-6">
+														<div class="line-input">
+															<i class="fas fa-link"></i><input type="text" class="links-input">
+														</div>
+														<div class="line-input">
+															<i class="fas fa-link"></i><input type="text" class="links-input">
+														</div>
+														<div class="line-input">
+															<i class="fas fa-link"></i><input type="text" class="links-input">
+														</div>
+													</div>
+												</div>
+												<div class="other-files-wrap-etap hidden">
+													
+														<div class="line-files selected">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														<div class="line-files">
+															<i class="fas fa-file"></i>
+															price-260918.xls
+															<button type='button' title="Выбрать" class="task-button-element  check-file-gallery-button"><i class="far fa-square"></i>
+															</button>
+														</div>
+														
+															
+														
+													
+												</div>
+												<div class="info-img-attached">
+													<div class="line-img-info-flat">
+														<p>кв.№ <span>1, 2, 3</span></p>
+													</div>
+													
+													
+												</div>
+									
+									
+								</div>
+								
+								<div class="col-3 text-left control-photo">
+									<button id="download-group-photo" class="button-link-grey mb-1">
+											Загрузить
+									</button>
+									<button id="delete-image-group-photo" class="button-link-grey mb-1">
+											Удалить
+									</button>
+									<button id="select-group-photo" class="button-link-grey mb-1 select-group-photo">
+											Назначить
+									</button>
+									
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>
+								<!-- Конец 6-го этапа, начало 7-го этапа   -->
+							<div class="row etap-creator etap-creator-7 hidden">
+								<div class="col-4 text-left">
+									<h5>Особенности юнитов</h5>
+								
+									<select required="required" id="features-select" class="custom-select">
+										<option selected disabled>Выберите особенность</option>
+										<option value="1">Солнечная сторона</option>
+										<option value="2">Высота потолков 3.3м</option>
+										<option value="3">Большая кухня 35кв.м</option>
+										<option value="4">Большой балкон 20 кв.м</option>
+
+									</select>
+	
+								</div>
+								<div class="col-4 text-left">
+									<div class="info-line-features">
+										<p>Особенности квартир № <span></span></p>
+									</div>
+									
+									
+									
+								</div>
+								
+								<div class="col-4 text-left control-photo">
+									<p>Выберите особенность юнита и нажмите кнопку назначить</p>
+									<button id="select-features-button" class="button-link-grey mb-1 select-features-button">
+											Назначить
+									</button>
+									
+									
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>
+								<!-- Конец 7-го этапа, начало 8-го этапа   -->
+							<div class="row etap-creator etap-creator-8 hidden">
+								<div class="col-4 text-left">
+									<h5>Быстрое изменение статусов</h5>
+								
+									<select required="required" id="status-select" class="custom-select">
+										<option selected disabled>Выберите статус</option>
+										<!-- .status-not-sale -->
+										<option value="1">Не продавать</option> 
+											<!-- .status-barter -->
+										<option value="2">Бартер</option>
+										<!-- .status-worker -->
+										<option value="3">Сотрудники </option>
+										<!-- .status-free -->
+										<option value="4">Свободна </option>
+										<!-- .status-booking-3 -->
+										<option value="5">Бронь (3 дня)</option>
+										<!-- .status-booking-7 -->
+										<option value="6">Бронь (7 дня)</option>
+										<!-- .status-booking-1 -->
+										<option value="7">Бронь на сутки</option>
+										<!-- .status-sale -->
+										<option value="8">Продана</option>
+										<!-- .status-sale-100 -->
+										<option value="9">Оплачен 100%</option>
+										<!-- .status-contract -->
+										<option value="10">Договор подписан</option>
+
+									</select>
+	
+								</div>
+								<div class="col-4 text-left">
+									<p>Выберите особенность юнита и нажмите кнопку назначить</p>
+									<button id="select-status-button" class="button-link-grey mb-1 select-status-button">
+											Назначить
+									</button>
+								</div>
+								
+								<div class="col-4 text-left control-photo">
+									<div class="alert-block-message">	
+									</div>
+								</div>
+							</div>
+				</div>
+		</div>
+	<div class="shahmatka">
+		
+	
+		<div class="container">
+			<div class="row">
+				<h2 class="title-house">ЖК “Комфорт таун”, Регенераторная 4</h2>
+			</div>
+		</div>
+		
+	
+		<div class="visible-content">
+			<div class="wrap-floor">
+			
+			
+			</div>
+		</div>
+	</div>
+	<div class="arrow-container-scrool">
+		
+			<div class="arrow-l">
+				<i class="fas fa-angle-double-left"></i>
+			</div>
+		
+			<div class="arrow-r">
+				<i class="fas fa-angle-double-right"></i>
+			</div>
+		
+	</div>
+</div>
+<footer>
+	
+
+
+</footer>
+<div class="modal fade modal-add-group-photo" id="modal-add-group-photo" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead" aria-hidden="true">
+  	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+	  		<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+	 		</div>
+	  		<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="group-photo-name">Введите название группы фотографий</label>
+						<input type="text" required name="group-photo-name" class="form-control-file input-photo-file" id="group-photo-name">
+					
+					</div>
+					<div class="form-group">
+						<select required="required" id="file-type-group" class="custom-select">
+							<option selected value="img">Изображения</option>
+							<option value="link">Ссылки</option>
+							<option value="xls">Excel</option>
+							<option value="pdf">Pdf</option>
+							<option value="doc">Word</option>
+						</select>
+					</div>
+					
+				</form>
+			</div>
+	  		
+			<div class="modal-footer">
+					<button type="button" class="btn btn-primary button-add-name-group">Добавить</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade modal-remove-photo-etap" id="modal-remove-photo-etap" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form >
+			<input type="hidden" id="input-remove-val" value="0">
+		</form>
+			<div class="form-group">
+				<p class="message-delete"></p>
+			</div>
+			
+		
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" id="remove-group-button" class="btn btn-primary">Да</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-photo" id="modal-add-photo" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить изображение</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+		
+			<div class="form-group photo-user-add">
+				<div class="user-form">
+					<img src="img/default-user.jpg">
+				</div>
+				<div class="block-form-photo">
+					<label for="photo-modal-add-lead">Выберите фото</label>
+					<input type="file" class="form-control-file input-photo-file" id="photo-modal-add-lead">
+				</div>
+			</div>
+			<div class="form-group">
+				
+			</div>
+			<div class="form-group">
+				<p>Максимальный размер 1600х800 пикселей. Форматы файлов jpg, png</p>
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary button-add-photo-form">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-lead" id="modal-add-lead" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-lead">Имя</label>
+				<input type="text" class="form-control" id="name-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="phone-modal-add-lead">Телефон</label>
+				<input type="text" class="form-control" id="phone-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Email</label>
+				<input type="text" class="form-control" id="email-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Статус</label>
+				<select class="custom-select select-modal">
+				  <option selected>Выберите статус</option>
+				  <option value="1">Последний разговор состоялся</option>
+				  <option value="2">Мониторинг цен, неконкретный</option>
+				  <option value="3">Стпрашивает по домам, отвечаем</option>
+				  <option value="4">Есть шорт-лист квартир</option>
+				  <option value="5">Переговоры по конкурентным квартирам</option>
+				</select>
+			</div>
+			<div class="form-group photo-user-add">
+				<div class="user-form">
+					<img src="img/default-user.jpg">
+				</div>
+				<div class="block-form-photo">
+					<label for="photo-modal-add-lead">Прикрепить фото клиента</label>
+					<input type="file" class="form-control-file" id="photo-modal-add-lead">
+				</div>
+			</div>
+			<div class="form-group">
+				
+			</div>
+			<div class="form-group">
+				<p>Дата: <span>25.06.2018</span></p>
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-edit-task" id="modal-edit-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-task" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Редактирование задачи</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи</label>
+				<input type="text" class="form-control" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи</label>
+				<textarea class="form-control" id="edit-task-descr" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task" id="modal-add-task" tabindex="-1" role="dialog" aria-labelledby="modal-add-task" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить новую задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи*</label>
+				<input type="text" class="form-control" required="required" placeholder="Введите Заголовок задачи" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи*</label>
+				<textarea class="form-control" required="required" id="edit-task-descr" placeholder="Описание задачи" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл(ы) к задаче</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task-file-inner" id="modal-add-task-file-inner" tabindex="-1" role="dialog" aria-labelledby="modal-add-task-file-inner" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить файл(ы) в задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			
+			<div class="form-group">
+				<label for="edit-task-file">Выберите один или несколько файлов</label>
+				<input type="file" multiple class="form-control-file" id="add-task-file-inner">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="modal-remove-file-task" role="dialog">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<p>Точно удалить?</p>
+		<form>
+			<input type="hidden" id="file-removing">
+		</form>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" id="modal-remove-file-task-button" class="btn btn-primary">Да</button>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/randomColor.js"></script>
+<script type="text/javascript" src="js/js.js" ></script>
+</body>
+</html>

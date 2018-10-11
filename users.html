@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRM Users</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&amp;subset=cyrillic" rel="stylesheet"> -->
+	<link rel="stylesheet" media="screen" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" media="screen" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" media="screen" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+
+	<link rel="stylesheet" media="screen, projection" href="style.css">
+</head>
+<body>
+<div class="start_page users-page">
+	<div class="container-fluid">
+		<div class="row">
+		<div class='nav'>
+			<button class="nav_trigger"><img src='img/hamurger_icon.png'></button>
+			<ul>
+				<li><a href='admin_1.html' title="Шахматка"><img src='img/chess_icon.png'><span>Шахматка</span></a></li>
+				<li class="active"><a href='clients.html'  title="Клиенты и лиды"><img src='img/clients_icon.png'><span>Клиенты и лиды</span></a></li>
+				<li><a href='projects.html' title="Проекты"><img src='img/projects_icon.png'><span>Проекты</span></a></li>
+				<li><a href='#'><img src='img/report_icon.png'><span>Отчеты</span></a></li>
+				<li><a href='settings.html' title="Настройки"><img src='img/settings_icon.png'><span>Настройки</span></a></li>
+				<li><a href='news.html'><img src='img/news_icon.png'><span>Новости</span></a></li>
+				<li><a href="users.html" title="Пользователи"><i class="fas fa-user-plus"></i><span>Пользователи</span></a></li>
+			</ul>
+		</div>
+		</div>
+		<div class='row '>
+			<div class="col-12 no-padding">
+				<div class='header'>
+					<div class="left">
+												
+					</div>
+					<div class="center">
+						<button class="button-mediumblue button-new-user"><i class="fas fa-user-plus"></i>Новый пользователь</button>
+					</div>
+					<div class="right">
+						<div class="user">
+							<img src="img/user1.jpg">
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<div class="container-fluid padding-78">
+			<div class="row  no-gutters justify-content-center mt-4 text-center head-clients users-head">
+				<div class="col">
+					<h2>Пользователь</h2>
+				</div>
+				<div class="col">
+					<h2>Статус</h2>
+				</div>
+				<div class="col">
+					<h2>Тип</h2>
+				</div>
+				
+			</div>
+		
+		
+		
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row no-gutters">
+			<div class="accordion accordion-clients accordion-users" id="accordionUsers">
+			  <div class="card">
+			    <div class="card-header" id="heading-user-1">
+			    	<div class="control-lead">
+			    	   	<button type="button" class="task-button-element button-user-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+						<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+					</div>
+
+
+			        <button class="title-accord-clients align-items-center" type="button" data-toggle="collapse" data-target="#user-1" aria-expanded="true" aria-controls="user-1">
+
+			        <div class="user-wrap">	
+			        	<div class="user">
+							<img src="img/user2.jpg">
+						</div>
+						<div class="text">
+							<p class="name">Андрей Касабов</p>
+						</div>
+					</div>
+					<div class="user-status-wrap">
+						<p>Активный</p>
+
+					</div>
+					<div class="status-wrap">
+						<p>Администратор</p>
+
+					</div>
+					
+														
+			        </button>
+			      
+			      
+			    </div>
+
+			    <div id="user-1" class="collapse show" aria-labelledby="heading-user-1" data-parent="#accordionUsers">
+			      <div class="card-body">
+					<div class="row  no-gutters">
+						
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>Разрешенные проекты</h3>
+									<div class="div-control-status">
+										<button type="button" class="task-button-element edit-projects-user"  title="Добавить поле"><i class="far fa-plus-square"></i></button>
+									</div>
+										<div class="wrap-input-control-element">
+											<select required="required"   class="custom-select proj-select-modal select-standart">
+												<option  value="1">ЖК "КОМФОРТ-ТАУН"</option>
+												<option selected value="2">ЖК "КОМФОРТ-ТАУН 2"</option>
+												<option value="3">ЖК "Меридиан"</option>
+											</select>
+												
+											<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+											<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+										</div>
+										<table class="table table-lead-block">
+					 
+										  <tbody>
+											<tr>
+												<td>ЖК КОМФОРТ ТАУН NNNN</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+											  <td> ЖК КОМФОРТ ТАУН 2</td>
+											  <td>
+											  	<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											<tr>
+											  <td> ЖК КОМФОРТ ТАУН 3</td>
+											 
+											  <td>
+											  	<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+												</div>
+											  </td>
+											</tr>
+										  </tbody>
+										</table>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>Права</h3>
+									<div class="div-control-status">
+										<button type="button" class="task-button-element edit-role-inner-user"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									</div>
+									<select disabled required="required" class="custom-select role-select select-standart">
+										<option selected value="role1">Администратор</option>
+										<option value="role2">Редактор</option>
+										<option value="role3">Менеджер</option>
+										<option value="role4">Клиент</option>
+									</select>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>История</h3>
+									
+									
+									<div class="create_setup create_setup_history">
+										
+										<ul>
+											<li><img src="img/list_marker.jpg">Добавлен проект ЖК КОМФОРТ ТАУН 3 <span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">Добавлен проект ЖК КОМФОРТ ТАУН 2<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											
+										</ul>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+			      </div>
+			    </div>
+
+			  </div>
+		  <div class="card close-user">
+			    <div class="card-header" id="heading-user-1">
+			    	<div class="control-lead">
+			    	   	<button type="button" class="task-button-element button-user-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+						<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+					</div>
+
+
+			        <button class="title-accord-clients align-items-center" type="button" data-toggle="collapse" data-target="#user-2" aria-expanded="true" aria-controls="user-2">
+
+			        <div class="user-wrap">	
+			        	<div class="user">
+							<img src="img/user2.jpg">
+						</div>
+						<div class="text">
+							<p class="name">Вася Пупкин</p>
+						</div>
+					</div>
+					<div class="user-status-wrap">
+						<p>Закрыт</p>
+
+					</div>
+					<div class="status-wrap">
+						<p>Редактор</p>
+
+					</div>
+					
+														
+			        </button>
+			      
+			      
+			    </div>
+
+			    <div id="user-2" class="collapse" aria-labelledby="heading-user-2" data-parent="#accordionUsers">
+			      <div class="card-body">
+					<div class="row  no-gutters">
+						
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>Разрешенные проекты</h3>
+									<div class="div-control-status">
+										<button type="button" class="task-button-element edit-projects-user"  title="Добавить поле"><i class="far fa-plus-square"></i></button>
+									</div>
+										<div class="wrap-input-control-element">
+											<select required="required"  class="custom-select proj-select-modal select-standart">
+												<option  value="1">ЖК "КОМФОРТ-ТАУН"</option>
+												<option selected value="2">ЖК "КОМФОРТ-ТАУН 2"</option>
+												<option value="3">ЖК "Меридиан"</option>
+											</select>
+												
+											<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+											<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+										</div>
+										<table class="table table-lead-block">
+					 
+										  <tbody>
+											<tr>
+												<td>ЖК КОМФОРТ ТАУН NNNN</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+											  <td> ЖК КОМФОРТ ТАУН 2</td>
+											  <td>
+											  	<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											<tr>
+											  <td> ЖК КОМФОРТ ТАУН 3</td>
+											 
+											  <td>
+											  	<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+												</div>
+											  </td>
+											</tr>
+										  </tbody>
+										</table>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>Права</h3>
+									<div class="div-control-status">
+										<button type="button" class="task-button-element edit-role-inner-user"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									</div>
+									<select disabled required="required"  class="custom-select role-select  select-standart">
+										<option  value="role1">Администратор</option>
+										<option selected value="role2">Редактор</option>
+										<option value="role3">Менеджер</option>
+									</select>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>История</h3>
+									
+									
+									<div class="create_setup create_setup_history">
+										
+										<ul>
+											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+										</ul>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+			      </div>
+			    </div>
+
+			  </div>
+
+			
+			</div>
+		</div>
+	</div>
+
+</div>
+	
+
+<footer>
+	
+
+
+</footer>
+<div class="modal fade modal-add-user" id="modal-add-user" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-userTitle">Добавить пользователя</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-user">Имя</label>
+				<input type="text" class="form-control" id="name-modal-add-user">
+			</div>
+			<div class="form-group">
+				<label for="role-select-modal">Статус</label>
+				<select required="required" id="role-select-modal" class="custom-select role-select select-standart">
+					<option  value="role1">Администратор</option>
+					<option  value="role2">Редактор</option>
+					<option selected value="role3">Менеджер</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="proj-select-modal">Разрешенные проекты</label>
+				<select required="required" id="proj-select-modal" class="custom-select proj-select-modal select-standart">
+					<option  value="1">ЖК "КОМФОРТ-ТАУН"</option>
+					<option selected value="2">ЖК "КОМФОРТ-ТАУН 2"</option>
+					<option value="3">ЖК "Меридиан"</option>
+				</select>
+				
+			</div>
+			<div class="form-group photo-user-add">
+				<div class="user-form">
+					<img src="img/default-user.jpg">
+				</div>
+				<div class="block-form-photo">
+					<label for="photo-modal-add-user">Прикрепить фото пользователя</label>
+					<input type="file" class="form-control-file" id="photo-modal-add-user">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="status-select-modal">Статус</label>
+				<select required="required" id="status-select-modal" class="custom-select status-select select-standart">
+					<option  value="1">Активный</option>
+					<option  value="2">Закрыт</option>
+				</select>
+			</div>
+			
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Добавить</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-lead" id="modal-add-lead" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Добавить лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-lead">Имя</label>
+				<input type="text" class="form-control" id="name-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="phone-modal-add-lead">Телефон</label>
+				<input type="text" class="form-control" id="phone-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Email</label>
+				<input type="text" class="form-control" id="email-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Статус</label>
+				<select class="custom-select select-modal">
+				  <option selected>Выберите статус</option>
+				  <option value="1">Последний разговор состоялся</option>
+				  <option value="2">Мониторинг цен, неконкретный</option>
+				  <option value="3">Стпрашивает по домам, отвечаем</option>
+				  <option value="4">Есть шорт-лист квартир</option>
+				  <option value="5">Переговоры по конкурентным квартирам</option>
+				</select>
+			</div>
+			<div class="form-group photo-user-add">
+				<div class="user-form">
+					<img src="img/default-user.jpg">
+				</div>
+				<div class="block-form-photo">
+					<label for="photo-modal-add-lead">Прикрепить фото клиента</label>
+					<input type="file" class="form-control-file" id="photo-modal-add-lead">
+				</div>
+			</div>
+			<div class="form-group">
+				
+			</div>
+			<div class="form-group">
+				<p>Дата: <span>25.06.2018</span></p>
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-edit-task" id="modal-edit-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Редактирование задачи</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи</label>
+				<input type="text" class="form-control" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи</label>
+				<textarea class="form-control" id="edit-task-descr" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task" id="modal-add-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Добавить новую задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи*</label>
+				<input type="text" class="form-control" required="required" placeholder="Введите Заголовок задачи" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи*</label>
+				<textarea class="form-control" required="required" id="edit-task-descr" placeholder="Описание задачи" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл(ы) к задаче</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task-file-inner" id="modal-add-task-file-inner" tabindex="-1" role="dialog" aria-labelledby="modal-add-task-file-inner" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Добавить файл(ы) в задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			
+			<div class="form-group">
+				<label for="edit-task-file">Выберите один или несколько файлов</label>
+				<input type="file" multiple class="form-control-file" id="add-task-file-inner">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="modal-remove-file-task" role="dialog">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<p>Точно удалить файл?</p>
+		<form>
+			<input type="hidden" id="file-removing">
+		</form>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" id="modal-remove-file-task-button" class="btn btn-primary">Да</button>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datepicker.ru.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/js.js" ></script>
+</body>
+</html>

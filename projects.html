@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRM</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&amp;subset=cyrillic" rel="stylesheet"> -->
+	<link rel="stylesheet" media="screen" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" media="screen" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" media="screen" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+	<link rel="stylesheet" media="screen" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" media="screen" href="libs/widgeditor/css/info.css">
+	<link rel="stylesheet" media="screen" href="libs/widgeditor/css/main.css">
+	<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body class="project-page">
+<div class="wrap-projects-page">
+	<div class="container-fluid">
+		<div class="row">
+		<div class='nav'>
+			<button class="nav_trigger"><img src='img/hamurger_icon.png'></button>
+			<ul>
+				<li ><a href='admin_1.html' title="Шахматка"><img src='img/chess_icon.png'><span>Шахматка</span></a></li>
+				<li><a href='clients.html' title="Клиенты и лиды" ><img src='img/clients_icon.png'><span>Клиенты и лиды</span></a></li>
+				<li class="active"><a href='projects.html' title="Проекты"><img src='img/projects_icon.png'><span>Проекты</span></a></li>
+				<li><a href='#'><img src='img/report_icon.png'><span>Отчеты</span></a></li>
+				<li><a href='settings.html' title="Настройки" ><img src='img/settings_icon.png'><span>Настройки</span></a></li>
+				<li><a href='news.html'><img src='img/news_icon.png'><span>Новости</span></a></li>
+				<li><a href="users.html" title="Пользователи"><i class="fas fa-user-plus"></i><span>Пользователи</span></a></li>
+			</ul>
+		</div>
+		</div>
+		<div class='row '>
+			<div class="col-12 no-padding">
+				<div class='header'>
+					<div class="left">
+						<form action="" class="form-inline select-project-form" id="select-project-form">
+							
+								<label for="builder-select">Застройщик</label>
+								<select required="required" id="builder-select" class="custom-select">
+									<option selected disabled>Выбрать застройщика</option>
+									<option value="builder-single-1">Название застройшик 1</option>
+									<option value="builder-single-2">Название застройшик 2</option>
+									
+								</select>
+						
+							
+								<label for="project-select">Проект</label>
+								<select required="required" id="project-select" class="custom-select project-select">
+									<option selected disabled>Выбрать проект</option>
+									<option value="builder-single-1"> ЖК КОМФОРТ ТАУН NNNN</option>
+									<option value="builder-single-2">Название застройшик 2</option>
+									
+								</select>
+							
+						</form>
+						
+					</div>
+					
+					<div class="right">
+						<div class="wrap-button-builder">
+							<span class="title-button-group">Застройщик</span>
+						
+						<button type="button" title="Добавить застройщика" data-toggle="collapse" data-target="#create_builder" aria-expanded="false" aria-controls="collapse" class="button-mediumblue collapsed"><i class="fas fa-plus"></i> Добавить</button>
+						<div class="create_builder_class collapse" id="create_builder">
+							<div class="card card-body">
+								<form action="" id="create-builder-form">
+								<div class="form-group">
+									<label for="name-builder-add">Название застройщика:</label>
+									<input required="required"  type="text" class="form-control" id="name-builder-add" placeholder="Введите название застройщика">
+								</div>
+								<div class="form-check form-check-builder">
+								  <input class="form-check-input" type="checkbox" checked="checked" value="" id="check-builder">
+								  <label class="form-check-label" for="check-builder">
+								   Свой застройщик 
+								  </label>
+								</div>
+								<div class="form-row justify-content-end">
+									<button  class="brown-button close-create-builder">
+											Отмена
+									</button>
+									<button type="submit" class="button-mediumblue">
+											Применить
+									</button>
+								</div>
+								</form>
+							</div>
+						</div>
+						<button type="button" title="Удалить текущего застройщика"  class="button-mediumblue collapsed"><i class="fas fa-minus"></i>Удалить		</button>
+						</div>
+							<div class="wrap-button-builder">
+								<span class="title-button-group">Проект</span>
+						<button type="button" title="Добавить проект" data-toggle="collapse" data-target="#create_project" aria-expanded="false" aria-controls="collapse" class="button-mediumblue"><i class="fas fa-plus"></i>Добавить</button>
+						<button type="button" title="Удалить проект" class="button-mediumblue"><i class="fas fa-minus"></i>Удалить</button>
+						</div>
+
+					
+						<div class="user">
+							<img src="img/user1.jpg">
+						</div>
+						
+					</div>
+
+					<div class="project_collapse filter-class collapse" id="create_project">
+						<div class="card card-body">
+							<form action="" id="add-projec-form" >
+							<div class="form-group">
+								<label for="name-project-add">Название проекта:</label>
+								<input type="text" required="required" class="form-control" id="name-project-add" placeholder="Введите название проекта">
+							</div>
+							<div class="form-group">
+								<label for="builder-select-add">Застройщик</label>
+								<select required="required" id="builder-select-add" class="custom-select">
+									<option selected disabled>Выбрать застройщика</option>
+									<option value="builder-single-1">Название застройшик 1</option>
+									<option value="builder-single-2">Название застройшик 2</option>
+									
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="date-project-add">Дата сдачи проекта:</label>
+								<input required="required" type="text" class="form-control" id="date-project-add" placeholder="Дата сдачи проекта">
+							</div>
+							<div class="form-group">
+								<label for="corpus-project-add">Количество корпусов:</label>
+								<input required="required" type="text" class="form-control" id="corpus-project-add" placeholder="Введите количество корпусов">
+							</div>
+							<div class="form-group count-entrance">
+								Количество подъездов в корпусе:
+							</div>
+							<div class="form-row row-count-entrance">
+								<div class="form-group">
+									<label class="entrance-project-label" for="entrance-project-add-1">Корпус 1</label>
+									<input required="required" type="text" class="form-control entrance-project" id="entrance-project-add-1">
+
+								</div>
+								
+							</div>
+							
+							
+							<div class="form-group">
+								<label for="addres-project-add">Адрес:</label>
+								<input type="text" class="form-control" id="addres-project-add" placeholder="Улица, номер дома">
+							</div>
+							<div class="form-row justify-content-end">
+								<button  class="brown-button close-create-project">
+										Отмена
+								</button>
+								<button type="submit" class="button-mediumblue">
+										Применить
+								</button>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+					
+					
+				
+					
+					
+				</div>
+			</div>
+				<div class="row padding-78 row-all-builders">
+						<div class="col-6">
+							<div class="wrap-col-project">
+								<p class="adress-project">Адрес: <span>ул.Набережная, 15</span></p> <p class="data-project">Дата сдачи проекта: <span>4 кв 2018</span></p>
+								<div class="block-sections-project">
+										<div class="building">
+											<h3>Здание в выбранном проекте:</h3>
+											<select class="select-korpus-project">
+												<option>КОРПУС 1</option>
+												<option>КОРПУС 2</option>
+												<option>КОРПУС 3</option>
+												<option>КОРПУС 4</option>
+											</select>
+											<div class="data-korpus">
+												<span class="data-korpus-descr">Дата сдачи:</span>
+												<span class="data-korpus-val">2 кв 2018</span>
+											</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-element-add"  title="Добавить"><i class="far fa-plus-square"></i></button>
+												<button type="button" class="task-button-element button-element-edit"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+												<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="Название корпуса" class="input-edit-option">
+												<input type="text" placeholder="Дата сдачи" class="input-edit-option">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div>
+										
+										
+								</div>
+								<div class="block-sections-entrance">
+										<div class="building">
+											<h3>Подъезд в выбранном корпусе:</h3>
+											<select class="select-korpus-project">
+												<option>Подъезд 1</option>
+												<option>Подъезд 2</option>
+												<option>Подъезд 3</option>
+												<option>Подъезд 4</option>
+											</select>
+											<div class="wrap-date-entrance"><span class="data-entrance-descr">Дата сдачи:</span><span class="date-entrance">4 кв 2018</span></div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-element-add"  title="Добавить"><i class="far fa-plus-square"></i></button>
+												<button type="button" class="task-button-element button-element-edit"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+												<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="Номер подъезда" class="input-edit-option">
+												<input type="text" placeholder="Дата сдачи подъезда" class="input-edit-option">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div>
+										<a href="create-shahmat.html" class="button-mediumblue button-go-to-shah"><i class="fas fa-angle-right"></i>Перейти</a>
+										
+								</div>
+								<div class="description-project-text">
+									<div class="line-control-editor">
+										<h3>Описание проекта</h3>
+										<button id="button-editor-edit" type="button" class="task-button-element button-editor-edit"  title="Редактировать"><i class="fas fa-pencil-alt"></i>Редактировать</button>
+										<button id="button-editor-save" type="button" class="task-button-element button-editor-save"  title="Сохранить"><i class="fas fa-check"></i> Сохранить</button>
+										
+									</div>
+									<div  id="editor">
+								        <p>Введите описание проекта</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="wrap-col-project">
+								<div class="descr-entrance">
+									<h3> Шахматка:</h3> 
+									<div class="wrap-status-shah" >Статус шахматки:<span class="status">
+										<span class="status-shah-1">Есть</span>
+										</span>
+										<div class="control-table">
+											<button type="button" class="task-button-element"  title="Добавить"><i class="far fa-plus-square"></i></button>
+											<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+										</div>
+									</div>
+								</div>
+									   <div class="gallery-block">
+
+										<div class="row">
+											<div class="col-6">
+												<h3>Галерея проекта</h3>
+											</div>
+											<div class="col-6">
+												<div class="block-file">
+													<label for="download-file-gallery-2" class="file-download-label"><i class="far fa-plus-square"></i>Добавить</label>
+													<input name="download-file-gallery" id="download-file-gallery-2"  class="file-download-input" type="file">
+												</div>			
+											</div>
+											<div class="col-12">
+												<div class="wrap-gallery wrap-gallery-admin">
+													<a data-fancybox="gallery" href="img/big-house.jpg">
+														<img src="img/big-house.jpg">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button remove-file-gallery-button"><i class="fas fa-trash-alt"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house2.jpg"><img src="img/big-house2.jpg">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button remove-file-gallery-button"><i class="fas fa-trash-alt"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house3.jpg"><img src="img/big-house3.jpg">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button remove-file-gallery-button"><i class="fas fa-trash-alt"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house4.jpg"><img src="img/big-house4.jpg">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button remove-file-gallery-button"><i class="fas fa-trash-alt"></i></button>
+													</a>
+													<a data-fancybox="gallery" href="img/big-house5.jpg"><img src="img/big-house5.jpg">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button remove-file-gallery-button"><i class="fas fa-trash-alt"></i></button>
+													</a>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="project-params-info">
+										<h3>Характеристики проекта</h3>
+										<div class="project-params-line project-params-district">
+											<div>Район</div><div>метро «Дворец спорта», Новые Дома</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div>
+										<div class="project-params-line project-params-adress">
+											<div>Адрес</div><div>пересечение пр. Льва Ландау и пр. Московского</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div> 
+										<div class="project-params-line project-params-class">
+											<div>Класс</div><div>Эконом+</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div> 
+										<div class="project-params-line project-params-floor">
+											<div>Этажность</div><div>10-14<br></div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div> 
+										<div class="project-params-line project-params-sections">
+											<div>Кол-во секций</div><div>3<br></div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div> 
+										<div class="project-params-line project-params-price">
+											<div>Цена за м2</div><div>от 13 100 до 16 900 грн/м²<br></div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div> 
+										<div class="project-params-line project-p	arams-begin-date">
+											<div>Начало строительства</div><div>3 квартал 2017 г.</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div> 
+										<div class="project-params-line project-params-end-date">
+											<div>Окончание строительства</div>
+											<div>2 квартал 2019 г.</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div>
+										<div class="project-params-line project-params-priority">
+											<div>Приоритет</div>
+											<div>100</div>
+											<div class="control-table">
+												<button type="button" class="task-button-element button-edit-character-project"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+											</div>
+											<div class="wrap-input-control-element">
+												<input type="text" placeholder="" class="input-edit-option ">
+												<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+												<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+											</div>
+										</div>
+										<div class="project-params-line project-params-download">
+											<div>Грузить по умолчанию</div>
+											<select class="select-download">
+												<option>Да</option>
+												<option>Нет</option>
+											</select>
+											
+										</div>
+									</div>
+									<div class="project-params-info-dynamic">
+										<h3> Дополнительные характеристики проекта</h3> 
+										<button type="button" class="task-button-element button-params-dynamic-add"  title="Добавить"><i class="far fa-plus-square"></i> Добавить характеристику</button>
+										<div class="line-control-dynamic">
+											<input type="text" placeholder="Название характеристики" class="input-edit-option input-add-attr-name">
+											<input type="text" placeholder="Значение характеристики" class="input-edit-option input-add-attr-value">
+											<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+											<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+										</div>
+										
+									
+									</div>
+						</div>
+					</div>
+			
+			</div>
+		</div>
+		
+		
+</div>
+
+	
+	
+
+
+<footer>
+	
+
+
+</footer>
+<div class="modal fade modal-add-lead" id="modal-add-lead" tabindex="-1" role="dialog" aria-labelledby="modal-add-lead" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="name-modal-add-lead">Имя</label>
+				<input type="text" class="form-control" id="name-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="phone-modal-add-lead">Телефон</label>
+				<input type="text" class="form-control" id="phone-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Email</label>
+				<input type="text" class="form-control" id="email-modal-add-lead">
+			</div>
+			<div class="form-group">
+				<label for="email-modal-add-lead">Статус</label>
+				<select class="custom-select select-modal">
+				  <option selected>Выберите статус</option>
+				  <option value="1">Последний разговор состоялся</option>
+				  <option value="2">Мониторинг цен, неконкретный</option>
+				  <option value="3">Стпрашивает по домам, отвечаем</option>
+				  <option value="4">Есть шорт-лист квартир</option>
+				  <option value="5">Переговоры по конкурентным квартирам</option>
+				</select>
+			</div>
+			<div class="form-group photo-user-add">
+				<div class="user-form">
+					<img src="img/default-user.jpg">
+				</div>
+				<div class="block-form-photo">
+					<label for="photo-modal-add-lead">Прикрепить фото клиента</label>
+					<input type="file" class="form-control-file" id="photo-modal-add-lead">
+				</div>
+			</div>
+			<div class="form-group">
+				
+			</div>
+			<div class="form-group">
+				<p>Дата: <span>25.06.2018</span></p>
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Добавить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-edit-task" id="modal-edit-task" tabindex="-1" role="dialog" aria-labelledby="modal-edit-task" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Редактирование задачи</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи</label>
+				<input type="text" class="form-control" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи</label>
+				<textarea class="form-control" id="edit-task-descr" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task" id="modal-add-task" tabindex="-1" role="dialog" aria-labelledby="modal-add-task" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить новую задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="edit-task-title">Заголовок задачи*</label>
+				<input type="text" class="form-control" required="required" placeholder="Введите Заголовок задачи" id="edit-task-title">
+			</div>
+			<div class="form-group">
+				<label for="edit-task-descr">Описание задачи*</label>
+				<textarea class="form-control" required="required" id="edit-task-descr" placeholder="Описание задачи" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="edit-task-file">Прикрепить файл(ы) к задаче</label>
+				<input type="file" multiple class="form-control-file" id="edit-task-file">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-add-task-file-inner" id="modal-add-task-file-inner" tabindex="-1" role="dialog" aria-labelledby="modal-add-task-file-inner" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title">Добавить файл(ы) в задачу</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<form enctype="multipart/form-data">
+			
+			<div class="form-group">
+				<label for="edit-task-file">Выберите один или несколько файлов</label>
+				<input type="file" multiple class="form-control-file" id="add-task-file-inner">
+				
+			</div>
+		</form>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Сохранить</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="modal-remove-file-task" role="dialog">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<p>Точно удалить файл?</p>
+		<form>
+			<input type="hidden" id="file-removing">
+		</form>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" id="modal-remove-file-task-button" class="btn btn-primary">Да</button>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datepicker.ru.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/inline/ckeditor.js"></script>
+
+<script type="text/javascript" src="js/js.js" ></script>
+
+</body>
+</html>
