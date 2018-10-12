@@ -76,13 +76,6 @@
 						<div class="dropdowns filter-clients-dropdowns">
 							<div class="filter_collapse collapse" id="filter_clients">
 								<div class="card card-body">
-									<div class="view_filter">
-										<h3>Вид</h3>
-										<button type="button" class="filter-button" ><i class="fas fa-bars"></i></button>
-										<button type="button"  class="filter-button"><i class="far fa-eye-slash"></i></button>
-										<button type="button"  class="filter-button">Статусы</button>
-										<button type="button" class="filter-button">Цены</button>
-									</div>
 									<div class="price_filter">
 										<h3>Стоимость <span>тыс в UAH</span></h3>
 										<input type="text" placeholder="от"  class="input-text filter-button">
@@ -116,9 +109,20 @@
 										<input type="text" placeholder="от" class="input-text">
 										<input type="text" placeholder="до" class="input-text">
 									</div>
+									<div class="select_filter">
+										<h3>Статус</h3>
+										<select >
+											<option>Последний разговор состоялся</option>
+											<option>Мониторинг цен, неконкретный</option>
+											<option>Стпрашивает по домам, отвечаем</option>
+											<option>Есть шорт-лист квартир</option>
+											<option>Клиент</option>
+											<option>Отменил сделку</option>
+										</select>
+									</div>
 									<button class="button-mediumblue">
 											Применить
-										</button>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -247,33 +251,50 @@
 			    	    <div class="form-check">
 						  <input  type="checkbox" id="inlineCheckbox1" value="option1">
 						</div>
-						<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+						<button type="button" class="task-button-element but-lead-status-edit"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
 						<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
 					</div>
 
 
 			        <button class="title-accord-clients align-items-center" type="button" data-toggle="collapse" data-target="#lead-1" aria-expanded="true" aria-controls="lead-1">
 
-			        <div class="user-wrap">	
-			        	<div class="text">
-							<p class="name">Андрей Касабов</p>
-							
+				        <div class="user-wrap">	
+				        	<div class="text">
+								<p class="name">Андрей Касабов</p>
+								
+							</div>
 						</div>
-					</div>
+					
+					
+					 	
+					 
 					<div class="project-wrap">
 						<p>ЖК “КОМФОРТ ТАУН”</p>
-						<span>Интерес</span>
+						<p>ЖК “МЕРИДИАН”</p>
+						
 					</div>
 					<div class="contacts-wrap">
 						<p>097-777-88-55</p>
-						<span>mail@gmail.com</span>
+						<p>050-777-88-55</p>
+					
 					</div>
+					 </button>
+					 <div class="title-accord-clients-right">
 					<div class="status-wrap">
-						<p>Vip</p>
+						<select disabled class="status-head-lead">
+							<option>Последний разговор состоялся</option>
+							<option>Мониторинг цен, неконкретный</option>
+							<option>Стпрашивает по домам, отвечаем</option>
+							<option>Есть шорт-лист квартир</option>
+							<option>Клиент</option>
+							<option>Отменил сделку</option>
+						</select>
 					</div>
 					<div class="time-status">
-						<p>10 дней назад</p>
-						<span>Среда, 18 мая</span>
+						<p>Контакт</p>
+						<span>5.10.2018</span>
+						<p>Создания</p>
+						<span>5.10.2018</span>
 					</div>
 					<div class="name-manger">
 						<div class="user">
@@ -284,15 +305,16 @@
 						</div>
 					</div>
 										
-			        </button>
+			       
 			        <div class="commentary-section">
-						<div class="commentary-lead" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis deleniti non explicabo minima id itaque nisi enim doloribus veritatis, nam omnis. Eaque, error distinctio, ipsa architecto alias vero officia optio.">Lorem ipsum dolor sit amet</div>
+						<div class="commentary-lead" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis deleniti non explicabo minima id itaque nisi enim doloribus veritatis, nam omnis. Eaque, error distinctio, ipsa architecto alias vero officia optio.">Lorem ipsum dolor sit amet , consectetur adipisicing elit. Facilis </div>
 						<div class="div-control-status">
 								<button type="button" class="task-button-element"  title="Редактировать комментарий"><i class="fas fa-pencil-alt"></i></button>
 								<button type="button" class="task-button-element"  title="Добавить комментарий"><i class="far fa-plus-square"></i></button>
 								<button type='button' title="Удалить комментарий" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
 							</div>
 
+					</div>
 					</div>
 			      
 			    </div>
@@ -307,8 +329,34 @@
 									<span class="lead-position">босс</span>
 								</div>
 								<div class="row-blocks-card">
-									<a  class="phone-lead" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
-									<a  class="mail-lead" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
+									<div class="messengers-contacts">
+										<div class="control-messengers-contacts">
+											<div class="control-messengers-contacts-head">
+												<h2>Контакты
+													<button type="button" class="task-button-element show-contacts-body"  title="Добавить контакт"><i class="far fa-plus-square"></i></button>
+												</h2>
+											</div>
+											<div class="control-messengers-contacts-body">
+												<input type="text" class="messengers-input" placeholder="Введите телефон, email">
+												<span class="title-select">Выберите тип</span>
+												<select class="messengers-select">
+													<option value="phone">Телефон стационарный</option>
+													<option value="mobile">Телефон мобильный</option>
+													<option value="viber">Viber</option>
+													<option value="whatsapp">Whatsapp</option>
+													<option value="telegram">Telegram</option>
+													<option value="email">Email</option>
+												</select>
+											
+												<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+												<button type="button" class="btn btn-secondary btn-dismiss" data-dismiss="modal"><i class="fas fa-times"></i></button>
+											</div>
+											
+										</div>
+										<a  class="lead-contacts-mes" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
+										<a  class="lead-contacts-mes" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
+									</div>
+									
 								</div>
 								<a href="#" class="button-link-grey button-lead-work"><i class="far fa-user"></i>В работу</a>
 							</div>
@@ -697,14 +745,12 @@
 			        <button class="title-accord-clients align-items-center" type="button" data-toggle="collapse" data-target="#lead-2" aria-expanded="true" aria-controls="lead-2">
 
 			        <div class="user-wrap">	
-			        	<div class="user">
-							<img src="img/user2.jpg">
-						</div>
-						<div class="text">
+			        	<div class="text">
 							<p class="name">Дарья Шпак</p>
-							
 						</div>
 					</div>
+				
+				
 					<div class="project-wrap">
 						<p>ЖК “КОМФОРТ ТАУН”</p>
 						<span>Интерес</span>
@@ -713,6 +759,8 @@
 						<p>097-777-88-55</p>
 						<span>mail@gmail.com</span>
 					</div>
+					</button>
+					<div class="title-accord-clients-right">
 					<div class="status-wrap">
 						<p>Агентство</p>
 					</div>
@@ -729,7 +777,7 @@
 						</div>
 					</div>
 										
-			        </button>
+			        </div>
 			        <div class="commentary-section">
 						<div class="commentary-lead" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis deleniti non explicabo minima id itaque nisi enim doloribus veritatis, nam omnis. Eaque, error distinctio, ipsa architecto alias vero officia optio.">Lorem ipsum dolor sit amet</div>
 						<div class="div-control-status">

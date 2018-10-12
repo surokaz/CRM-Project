@@ -187,7 +187,16 @@ $(function(){
 		
 	});
 
+//Скролл заинтересованных клиентов
+	$('.curiosity-leads').mCustomScrollbar({
+		theme:'rounded-dark',
+		scrollbarPosition: "inside",
+		autoHideScrollbar:false,
+		scrollButtons:{enable: true },
+		scrollTo: "right"
 
+
+	});
 
 //Предпросмотр фотографии при добавлении в задачу
 function previewFile() {
@@ -2755,8 +2764,78 @@ $('#file-type-group').change(function(){
 		} 
 	}
 });
+//Быстрое Редактирование статуса лида
+$('.but-lead-status-edit').click(function(event) {
+	if ($(this).children().hasClass('fa-pencil-alt')) {
+		$(this).children().removeClass('fa-pencil-alt').addClass('fa-save');
+		$(this).prev('.form-check').hide();
+		$(this).next('.remove-file-task-button').hide();
+	} else {
+		$(this).children().removeClass('fa-save').addClass('fa-pencil-alt');
+		$(this).prev('.form-check').show();
+		$(this).next('.remove-file-task-button').show();
+	}
+	
+	var seleStatus = $(this).closest('.card-header').children('.title-accord-clients-right').children().children('.status-head-lead');
+	var sele = seleStatus.prop('disabled');
+	if (sele == true) {
+		seleStatus.prop('disabled', false);
+	} else {
+		seleStatus.prop('disabled', true)
+	}
+
+	
+});
+$('.control-messengers-contacts-head .show-contacts-body').click(function(){
+	$(this).closest('.control-messengers-contacts-head').next('.control-messengers-contacts-body').show();		
+	
+});
+		
+
+$('.messengers-contacts .btn-save').click(function(){
+	var selVal = $(this).prev().val();
+	var inpVal = $(this).prev().prev().prev().val();
+	console.log(inpVal);
+	var icon = iconMessengers(selVal);
+	var aVal ='';
+	if (selVal === 'email') {
+		aVal = 'mailto:' + inpVal;
+	} else {
+		aVal = 'tel:' + inpVal;
+	}
+	var elHtml =' <a  class="lead-contacts-mes" href="mailto:mail@gmail.com">' + icon + inpVal + '</a>';
+	$(this).closest('.messengers-contacts').append(elHtml);
+});
+$('.messengers-contacts .btn-dismiss').click(function(){
+	$(this).closest('.control-messengers-contacts-body').hide();
+});
 
 
+function iconMessengers(mes) {
+
+		switch (mes) {
+			case 'phone' :
+				mes ='<i class="fas fa-phone"></i>';
+			break;
+			case 'mobile' :
+				mes ='<i class="fas fa-mobile-alt"></i>';
+			break;
+			case 'viber' :
+				mes ='<i class="fab fa-viber"></i>';
+			break;
+			case 'whatsapp' :
+				mes ='<i class="fab fa-whatsapp"></i>';
+			break;
+			case 'telegram' :
+				mes ='<i class="fab fa-telegram"></i>';
+			break;
+			case 'email' :
+				mes ='<i class="fas fa-envelope"></i>';
+			break;
+
+		}
+		return mes
+}
 
 
 

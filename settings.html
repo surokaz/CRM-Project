@@ -720,20 +720,22 @@
 					<form >
 						<div class="form-row">
 						<div class="form-group col-6">
-							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название статуса...">
+							<input type="text" class="form-control input-site" id="name-unit-status" placeholder="Название">
 						</div>
 						<div class="form-group col-6">
 							<select class="custom-select select-site">
-							  <option value="1" selected >Текст 1</option>
-							  <option value="2">Текст 2</option>
+							  <option value="1" selected >Текст</option>
+							  <option value="2">Выбор</option>
 							</select>
 						</div>
 					  </div>
 					  <div class="form-row">
-						<div class="form-group col-5">
+						<div class="form-group col-6">
+							<input type="text" class="form-control input-site" placeholder="Значение">
+						</div>
+						<div class="form-group col-6">
 							<button type="submit" class="button-mediumblue">Добавить</button>
 						</div>
-					  
 					  </div>
 					</form>
 					<table class="table table-settings current-fields-deal">
@@ -784,18 +786,17 @@
 						</div>
 						<div class="form-group col-5">
 							<select class="custom-select select-site">
-							  <option value="1" selected >Текст 1</option>
-							  <option value="2">Текст 2</option>
+							  <option value="1" selected >Текст</option>
+							  <option value="2">Выбор</option>
 							</select>
 						</div>
 					  </div>
-					  <div class="form-row">
-						<div class="form-group col-5">
-							<button type="submit" class="button-mediumblue">Добавить</button>
+					   <div class="form-row">
+						<div class="form-group col-6">
+							<input type="text" class="form-control input-site" placeholder="Значение">
 						</div>
-						<div class="form-group col-7 text-right">
-							
-
+						<div class="form-group col-6">
+							<button type="submit" class="button-mediumblue">Добавить</button>
 						</div>
 					  </div>
 					</form>
@@ -825,6 +826,17 @@
 						  <td>Высота потолков</td>
 						  <td>Текст</td>
 						  <td>4 m</td>
+						  <td>
+						  	<div class="control-table">
+									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+								</div>
+						  </td>
+						</tr>
+						<tr>
+						  <td>Цвет окон</td>
+						  <td>Выбор</td>
+						  <td>зеленый/красный/синий</td>
 						  <td>
 						  	<div class="control-table">
 									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
