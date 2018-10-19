@@ -63,11 +63,11 @@
 							</div>
 							<button class="close-lead"><i class="far fa-window-close"></i></button>
 						</div> -->
-						<a href="#" class="button-link-grey"><i class="fas fa-link"></i>Ссылка</a>
-						<button class="button-mediumblue"><i class="fas fa-user-plus"></i>Новый лид</button>
+						<!-- <a href="#" class="button-link-grey"><i class="fas fa-link"></i>Ссылка</a> -->
+						<button class="button-mediumblue add-lead-header"><i class="fas fa-user-plus"></i>Новый лид</button>
 					</div>
 					<div class="right">
-						<button class="button-mediumblue"><i class="fas fa-angle-right"></i>Записаться</button>
+						<!-- <button class="button-mediumblue"><i class="fas fa-angle-right"></i>Записаться</button> -->
 						<button class="button-filter-grey" data-toggle="collapse" data-target="#filter_clients" aria-expanded="false" aria-controls="param_collapse">Фильтр<i class="fas fa-filter"></i></button>
 						<a href="#" class="button-count-message" >
 							<i class="far fa-bell"></i>
@@ -139,102 +139,89 @@
 		</div>
 		
 	</div>
-	<div class="container">
-			
-		<div class="row no-gutters">
-			<div class="col-12">
-				<div class="stat-status">
-					<div class="row  no-gutters">
-						<h3>Статистика статуса</h3>
-						<select class="select-site">
-							<option>За последнюю неделю</option>
-							<option>За последний месяц</option>
-							<option>За день</option>
-							<option>За квартал</option>
-						</select>
-
-					</div>
-					<div class="row no-gutters desc-stat-status">
-						<div class="col-2">
-							<div class="line-category">
-								<span class="icon-stat" style="background-color: #a692e6;"><i class="far fa-user"></i></span>
-								Vip
-							</div>
-							<div class="line-category">
-								<p><span>24</span>Клиента</p>
-							</div>
+	<div class="container-fluid padding-78">
+			<div class="row  no-gutters   head-clients">
+				<div class="col">
+					<div class="wrap-event-control">
+						<div class="btn-group" role="group" >
+							<select name="" id="">
+								<option disabled selected>Выбрать</option>
+								<option value="1">Экспортировать выдел.</option>
+								<option value="1">Экспортировать все</option>
+								<option value="1">Отправить сообщение</option>
+								<option value="2">Удалить</option>
+							</select>
+							<button type="button" class="btn btn-primary btn-event-success">Применить</button>
 						</div>
-						<div class="col-2">
-							<div class="line-category">
-								<span class="icon-stat" style="background-color: #e5c9a4;"><i class="far fa-user"></i></span>
-								Агентство
-							</div>
-							<div class="line-category">
-								<p><span>128</span>Клиента</p>
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="line-category">
-								<span class="icon-stat" style="background-color: #c6badb;"><i class="far fa-user"></i></span>
-								Категория 3
-							</div>
-							<div class="line-category">
-								<p><span>24</span>Клиента</p>
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="line-category">
-								<span class="icon-stat" style="background-color: #f5dc78;"><i class="far fa-user"></i></span>
-								Категория 4
-							</div>
-							<div class="line-category">
-								<p><span>24</span>Клиента</p>
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="line-category">
-								<span class="icon-stat" style="background-color: #ffc3c4;"><i class="far fa-user"></i></span>
-								Категория 5
-							</div>
-							<div class="line-category">
-								<p><span>21</span>Клиента</p>
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="line-category">
-								<span class="icon-stat" style="background-color: #fdb9db;"><i class="far fa-user"></i></span>
-								Категория 6
-							</div>
-							<div class="line-category">
-								<p><span>24</span>Клиента</p>
-							</div>
-						</div>
-			
 					</div>
 				</div>
-			</div>	
-			
-		</div>
+			</div>
 	</div>
 		<div class="container-fluid padding-78">
 			<div class="row  no-gutters justify-content-center text-center head-clients">
-				<div class="col">
-					<h2>Базовая информация</h2>
-				</div>
-				<div class="col">
-					<h2>Дополнительная информация</h2>
-				</div>
-				<div class="col">
-					<h2>Контакты</h2>
-				</div>
-				<div class="col">
-					<h2>Статус</h2>
-				</div>
-				<div class="col">
-					<h2>Обновлялся</h2>
-				</div>
-				<div class="col">
-					<h2>Комментарий</h2>
+				<div class="col-12">
+					<div class="group-head-control">
+						<div class="head-element">
+							<span>Имя Фамилия</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">1</span>
+						</div>
+						<div class="head-element">
+							<span>Интерес</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">2</span>
+						</div>
+						<div class="head-element">
+							<span>Контакты</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">3</span>
+						</div>
+						<div class="head-element">
+							<span>Статус</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">4</span>
+						</div>
+						<div class="head-element">
+							<span>Обновлялся</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">1</span>
+						</div>
+						<div class="head-element">
+							<span>Менеджер</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">6</span>
+						</div>
+						<div class="head-element">
+							<span>Комментарий</span>
+							<div class="sorting-group-buttons">
+								<button class="sort-button-control sort-up-button sort-current"><i class="fas fa-sort-up"></i></button>
+								<button class="sort-button-control sort-down-button"><i class="fas fa-sort-down"></i></button>
+							</div>
+							<span class="num-sort">7</span>
+						</div>
+					</div>		
+				
+
+
+
 				</div>
 			</div>
 		
@@ -252,10 +239,7 @@
 						  <input  type="checkbox" id="inlineCheckbox1" value="option1">
 						</div>
 						<button type="button" class="task-button-element but-lead-status-edit"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-						<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
 					</div>
-
-
 			        <button class="title-accord-clients align-items-center" type="button" data-toggle="collapse" data-target="#lead-1" aria-expanded="true" aria-controls="lead-1">
 
 				        <div class="user-wrap">	
@@ -325,8 +309,18 @@
 						<div class="col-2">
 							<div class="contacts-lead-block">
 								<div class="row-blocks-card">
-									<h2>Андрей Касабов</h2>
+									<button type="button" class="task-button-element button-edit-name-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i>Редактирвать</button><h2>Андрей Касабов</h2>
 									<span class="lead-position">босс</span>
+									<div class="wrap-input-control-element">
+										<label >Имя Фамилия 
+										<input type="text" placeholder="" class="input-edit-option input-family-option">
+										</label>
+										<label >Комментарий 
+										<input type="text" placeholder="" class="input-edit-option input-comment-option">
+										</label>
+										<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+										<button type="button" class="btn btn-secondary btn-dismiss"><i class="fas fa-times"></i></button>
+									</div>
 								</div>
 								<div class="row-blocks-card">
 									<div class="messengers-contacts">
@@ -357,111 +351,196 @@
 										<a  class="lead-contacts-mes" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
 									</div>
 									
+									<div class="dop-contacts-block">
+										<h3>Дополнительная информация</h3>
+									
+									<button class="button-link-grey view-dop-contacts-lead">Карточка клиента</button>
+									</div>
+									
+									
 								</div>
 								<a href="#" class="button-link-grey button-lead-work"><i class="far fa-user"></i>В работу</a>
 							</div>
 
 						</div>
-						<div class="col-3">
+						<div class="col-5">
 							<div class="lead-block">
 								<div class="head-lead-block">
-									<h3>Дополнительные поля</h3>
-									<div class="div-control-status">
-										
-										<button type="button" class="task-button-element"  title="Добавить поле"><i class="far fa-plus-square"></i></button>
-										
-									</div>
+									<h3>Интерес</h3>
 									
-										<table class="table table-lead-block">
-					 
+									
+										<table class="table table-lead-block table-lead-block-curios">
+				 						<thead>
+				 							<tr>
+				 								<td></td>
+				 								<td>Компл.</td>
+				 								<td></td>
+				 								<td>Ком.</td>
+				 								<td>Площ.</td>
+				 								<td>Цена $</td>
+				 								<td>Статус</td>
+				 								<td></td>
+				 							</tr>
+				 						</thead>
 										  <tbody>
 											<tr>
-												<td>Рекл. группа:</td>
-												<td>Текст</td>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td class="cell-button-sale">ЖК "Комфорт таун"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
+												<td> <span class="sale-action">Акция</span></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
 												<td>
 													<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
 														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
 													</div>
 												</td>
 											</tr>
 											<tr>
-											  <td>Рекл. источник: </td>
-											  <td>Текст</td>
-											  <td>
-											  	<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
-													</div>
-											  </td>
-											</tr>
-											<tr>
-											  <td>Препятствия:</td>
-											  <td>Текст</td>
-											  <td>
-											  	<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
-													</div>
-											  </td>
-											</tr>
-											<tr>
-											  <td>Препятствия:</td>
-											  <td>нет</td>
-											  <td>
-											  	<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
-													</div>
-											  </td>
-											</tr>
-											<tr>
-											  <td>Встреча:</td>
-											  <td>была</td>
-											  <td>
-											  	<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
-													</div>
-											  </td>
-											</tr>
-											<tr>
-											  <td>Агентство недвижимости:</td>
-											  <td></td>
-											  <td>
-											  	<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
-													</div>
-											  </td>
-											</tr>
-											
-										  </tbody>
-										</table>
-								
-								</div>
-							</div>
-						</div>
-						<div class="col-3">
-							<div class="lead-block">
-								<div class="head-lead-block">
-									<h3>Задача</h3>
-									<div class="div-control-status">
-										
-										<button type="button" class="task-button-element"  title="Добавить поле"><i class="far fa-plus-square"></i></button>
-										
-									</div>
-									
-										<table class="table table-lead-block">
-					 
-										  <tbody>
-											<tr>
-												<td>Нет</td>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
 												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
 												<td>
 													<div class="control-table">
-														<button type="button" class="task-button-element"  title="Редактировать задачу"><i class="fas fa-pencil-alt"></i></button>
-														<button type='button' title="Удалить задачу" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В сделку</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
 													</div>
 												</td>
 											</tr>
@@ -474,91 +553,201 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
-							<div class="lead-block">
+						<div class="col-5">
+								<div class="lead-block">
 								<div class="head-lead-block">
-									<h3>История</h3>
+									<h3>Действия пользователя в приложении</h3>
 									
 									
-									<div class="create_setup create_setup_history">
-										
-										<ul>
-											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
-											<li><img src="img/list_marker.jpg">New unit was created.<span class="time">4 дня назад</span></li>
+										<table class="table table-lead-block table-lead-block-curios">
+				 						<thead>
+				 							<tr>
+				 								<td></td>
+				 								<td>Компл.</td>
+				 								<td></td>
+				 								<td>Ком.</td>
+				 								<td>Площ.</td>
+				 								<td>Цена $</td>
+				 								<td>Статус</td>
+				 								<td></td>
+				 							</tr>
+				 						</thead>
+										  <tbody>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td class="cell-button-sale">ЖК "Комфорт таун"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td> <span class="sale-action">Акция</span></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="link-table"><i class="fas fa-link"></i></a>
+												</td>
+												<td  class="cell-button-sale">ЖК "Мередиан"
+													<button class="jump-sale-block">В интерес</button>
+												</td>
+												<td></td>
+												<td>3</td>
+												<td>65</td>
+												<td>55000</td>
+												<td>
+													<div class="status-table">
+														<span class="status-table-icon" style="background-color: #1ba89b;"></span>
+														<span class="status-table-text">Свободна</span>
+													</div>
+												</td>
+												<td>
+													<div class="control-table">
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+									
 											
-										</ul>
-									</div>
+											
+										  </tbody>
+										</table>
 								
 								</div>
 							</div>
+				
 						</div>
+						
+						
 					</div>
-					<div class="row  no-gutters  more-contacts">
-						<div class="col-12">
-							<h2>Доп. контакты
-							<button type="button" class="task-button-element"  title="Редактировать"><i class="far fa-plus-square"></i></button></h2>
-						</div>
-						<div class="col-2">
-							<div class="contacts-lead-block">
-								<div class="row-blocks-card">
-									<h3>1.Андрей Касабов
-									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button></h3>
-									<span class="lead-position">оформляем на него</span>
-								</div>
-								<div class="row-blocks-card">
-									<a  class="phone-lead" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
-									<a  class="mail-lead" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="contacts-lead-block">
-								<div class="row-blocks-card">
-									<h3>2.Андрей Касабов
-									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button></h3>
-									<span class="lead-position">оформляем на него</span>
-								</div>
-								<div class="row-blocks-card">
-									<a  class="phone-lead" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
-									<a  class="mail-lead" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-2">
-							<div class="contacts-lead-block">
-								<div class="row-blocks-card">
-									<h3>3.Андрей Касабов
-									<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button></h3>
-									<span class="lead-position">оформляем на него</span>
-								</div>
-								<div class="row-blocks-card">
-									<a  class="phone-lead" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
-									<a  class="mail-lead" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
-								</div>
-								
-							</div>
-						</div>
-					</div>
+			
 					<div class="row  more-contacts deal-lead">
 						<div class="col-12">
 							<h2>Активные сделки</h2>
@@ -567,9 +756,8 @@
 							<table class="table table-lead-block">
 								<tbody>
 									<tr>
-										<td>Редактировать сделку</td>
-										<td>
-											<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+										<td colspan="2">
+											<button type="button" class="task-button-element edit-deal-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i>Редактировать сделку</button>
 										</td>
 										
 									</tr>
@@ -599,7 +787,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -615,10 +803,19 @@
 									<p>Переговоры</p>
 								</div>
 							</div>
+							<div class="commentary-deal-lead">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, accusantium id magnam minus assumenda, facere, nihil et dolor labore quos perferendis odio, quod iste. Quo laudantium ea commodi quod quas.
+							</div>
 						</div>
 						<div class="col-3">
 							<table class="table table-lead-block">
 								<tbody>
+									<tr>
+										<td colspan="2">
+											<button type="button" class="task-button-element edit-deal-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i>Редактировать сделку</button>
+										</td>
+										
+									</tr>
 									<tr>
 										<td>Где</td>
 										<td>Дом №1/1</td>
@@ -635,7 +832,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -651,10 +848,19 @@
 									<p>Показ</p>
 								</div>
 							</div>
+							<div class="commentary-deal-lead">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, accusantium id magnam minus assumenda, facere, nihil et dolor labore quos perferendis odio, quod iste. Quo laudantium ea commodi quod quas.
+							</div>
 						</div>
 						<div class="col-3">
 							<table class="table table-lead-block">
 								<tbody>
+									<tr>
+										<td colspan="2">
+											<button type="button" class="task-button-element edit-deal-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i>Редактировать сделку</button>
+										</td>
+										
+									</tr>
 									<tr>
 										<td>Где</td>
 										<td>Дом №1/1</td>
@@ -671,7 +877,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -687,6 +893,68 @@
 									<p>Аванс</p>
 								</div>
 							</div>
+							<div class="commentary-deal-lead">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, accusantium id magnam minus assumenda, facere, nihil et dolor labore quos perferendis odio, quod iste. Quo laudantium ea commodi quod quas.
+							</div>
+						</div>
+						<div class="col-3">
+							После перевода в статус продано или отказ сделка перемещается в закрытые.
+						</div>
+
+
+					</div>
+					<div class="row  more-contacts deal-lead deal-lead-close">
+						<div class="col-12">
+							<h2>Закрытые сделки</h2>
+						</div>
+						<div class="col-3">
+							<table class="table table-lead-block">
+								<tbody>
+									<tr>
+										<td>Где</td>
+										<td>Дом №1/1</td>
+										
+									</tr>
+									<tr>
+										<td>Комн/площадь</td>
+										<td>1 комн./38,69 кв.м.</td>
+										
+									</tr>
+									<tr>
+										<td>Тип оплаты:</td>
+										<td>Частичная/Рассрочка</td>
+										
+									</tr>
+									<tr>
+										<td>Сумма сделки:</td>
+										<td>500 000 грн</td>
+										
+									</tr>
+									<tr>
+										<td>Олачено:</td>
+										<td>200 000 грн</td>
+										
+									</tr>
+									<tr>
+										<td>Счет №</td>
+										<td>007</td>
+										
+									</tr>
+								</tbody>
+							</table>
+							<div class="status-deal-lead status-6">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span class="last"></span>
+								<div class="desc-status-lead">
+									<p>Отказ</p>
+								</div>
+							</div>
+							<div class="commentary-deal-lead">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, accusantium id magnam minus assumenda, facere, nihil et dolor labore quos perferendis odio, quod iste. Quo laudantium ea commodi quod quas.
+							</div>
 						</div>
 						<div class="col-3">
 							<table class="table table-lead-block">
@@ -707,7 +975,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -723,9 +991,27 @@
 									<p>Продано</p>
 								</div>
 							</div>
+							<div class="commentary-deal-lead">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, accusantium id magnam minus assumenda, facere, nihil et dolor labore quos perferendis odio, quod iste. Quo laudantium ea commodi quod quas.
+							</div>
 						</div>
 
 
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>Последнее действие</h3>
+									<ul class="history-list-control">
+										<li><img src="img/list_marker.jpg">Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+									</ul>
+									<button class="button-link-grey view-history-lead">Вся история</button>
+									
+								
+								</div>
+							</div>
+						</div>
 					</div>
 			      </div>
 			    </div>
@@ -738,7 +1024,6 @@
 						  <input  type="checkbox" id="inlineCheckbox1" value="option1">
 						</div>
 						<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
-						<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
 					</div>
 
 
@@ -796,8 +1081,18 @@
 						<div class="col-2">
 							<div class="contacts-lead-block">
 								<div class="row-blocks-card">
-									<h2>Дарья Шпак</h2>
+									<button type="button" class="task-button-element button-edit-name-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i>Редактирвать</button><h2>Дарья Шпак</h2>
 									<span class="lead-position">босс</span>
+									<div class="wrap-input-control-element">
+										<label >Имя Фамилия 
+										<input type="text" placeholder="" class="input-edit-option input-family-option">
+										</label>
+										<label >Комментарий 
+										<input type="text" placeholder="" class="input-edit-option input-comment-option">
+										</label>
+										<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+										<button type="button" class="btn btn-secondary btn-dismiss"><i class="fas fa-times"></i></button>
+									</div>
 								</div>
 								<div class="row-blocks-card">
 									<a  class="phone-lead" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
@@ -1007,7 +1302,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -1043,7 +1338,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -1079,7 +1374,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -1115,7 +1410,7 @@
 										
 									</tr>
 									<tr>
-										<td>Уникальный id</td>
+										<td>Счет №</td>
 										<td>007</td>
 										
 									</tr>
@@ -1153,6 +1448,429 @@
 
 
 </footer>
+<div class="modal fade modal-jump-lead" id="modal-jump-lead" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">Перенос в сделку</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+				<div class="form-group">
+				    <label for="one-price-unit">Первоначальная цена</label>
+				    <input type="text" class="form-control" id="one-price-unit" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="sum-price-unit">Сумма сделки</label>
+				    <input type="text" class="form-control" id="sum-price-unit" placeholder="">
+				  </div>
+				   <div class="form-group">
+				    <label for="number-price">Номер счета</label>
+				    <input type="text" class="form-control" id="number-price" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="type-payment">Тип оплаты</label>
+				    <select class="form-control" id="type-payment">
+				      <option>Частичная</option>
+				      <option>Налом</option>
+				      <option>1-й взнос</option>
+				      <option>Рассрочка</option>
+				    </select>
+				  </div>
+				  <div class="form-group">
+				    <label for="type-payment">Статус сделки</label>
+				    <select class="form-control" id="type-payment">
+				      <option>Переговоры</option>
+				      <option>Показ</option>
+				      <option>Согласование</option>
+				      <option>Аванс</option>
+				      <option>Продано</option>
+				      <option>Отказ</option>
+				    </select>
+				  </div>
+				  <div class="form-group">
+				  	<label for="comment-deal">Комментарий</label>
+				  	<textarea name="" id="comment-deal" class="comment-deal-modal"  rows="5"></textarea>
+				  </div>		
+	  </div>
+	  <div class="modal-footer">
+	  		<button type="button" class="btn btn-primary">Добавить</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-dop-contacts-lead" id="modal-dop-contacts-lead" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">История лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+					<div class="row  no-gutters  more-contacts">
+						<div class="col-12">
+							<h2>Доп. контакты
+								<button type="button" class="task-button-element add-lead-dop-contact"  title="Добавить контакт"><i class="far fa-plus-square"></i></button>
+							</h2>
+							<div class="wrap-input-control-element">
+								<label >Имя Фамилия 
+								<input type="text" placeholder="" class="input-edit-option">
+								</label>
+								<label >Комментарий 
+								<input type="text" placeholder="" class="input-edit-option">
+								</label>
+								<button type="button" class="btn btn-primary btn-sm btn-input-control-save">Сохранить</button>
+								<button type="button" class="btn btn-secondary btn-sm btn-input-control-dismis">Отменить</button>
+
+							</div>
+						</div>
+						<div class="row">
+						<div class="col-3">
+							<div class="contacts-lead-block">
+								<div class="row-blocks-card">
+									<h3>1.Андрей Касабов
+									<button type="button" class="task-button-element edit-dop-contacts-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button></h3>
+									<span class="lead-position">оформляем на него</span>
+									<div class="wrap-input-control-element">
+										<label >Имя Фамилия 
+										<input type="text" placeholder="" class="input-edit-option input-family-option">
+										</label>
+										<label >Комментарий 
+										<input type="text" placeholder="" class="input-edit-option input-comment-option">
+										</label>
+										<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+										<button type="button" class="btn btn-secondary btn-dismiss" ><i class="fas fa-times"></i></button>
+									</div>
+								</div>
+								<div class="row-blocks-card">
+									<div class="messengers-contacts">
+										<div class="control-messengers-contacts">
+											<div class="control-messengers-contacts-head">
+												<h2>Контакты
+													<button type="button" class="task-button-element show-contacts-body"  title="Добавить контакт"><i class="far fa-plus-square"></i></button>
+												</h2>
+											</div>
+											<div class="control-messengers-contacts-body">
+												<input type="text" class="messengers-input" placeholder="Введите телефон, email">
+												<span class="title-select">Выберите тип</span>
+												<select class="messengers-select">
+													<option value="phone">Телефон стационарный</option>
+													<option value="mobile">Телефон мобильный</option>
+													<option value="viber">Viber</option>
+													<option value="whatsapp">Whatsapp</option>
+													<option value="telegram">Telegram</option>
+													<option value="email">Email</option>
+												</select>
+											
+												<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+												<button type="button" class="btn btn-secondary btn-dismiss"><i class="fas fa-times"></i></button>
+											</div>
+											
+										</div>
+										<a  class="lead-contacts-mes" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
+										<a  class="lead-contacts-mes" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="contacts-lead-block">
+								<div class="row-blocks-card">
+									<h3>2.Андрей Касабов
+									<button type="button" class="task-button-element edit-dop-contacts-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button></h3>
+									<span class="lead-position">оформляем на него</span>
+									<div class="wrap-input-control-element">
+										<label >Имя Фамилия 
+										<input type="text" placeholder="" class="input-edit-option input-family-option">
+										</label>
+										<label >Комментарий 
+										<input type="text" placeholder="" class="input-edit-option input-comment-option">
+										</label>
+										<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+										<button type="button" class="btn btn-secondary btn-dismiss"><i class="fas fa-times"></i></button>
+									</div>
+								</div>
+								<div class="row-blocks-card">
+									<div class="messengers-contacts">
+										<div class="control-messengers-contacts">
+											<div class="control-messengers-contacts-head">
+												<h2>Контакты
+													<button type="button" class="task-button-element show-contacts-body"  title="Добавить контакт"><i class="far fa-plus-square"></i></button>
+
+												</h2>
+											</div>
+											<div class="control-messengers-contacts-body">
+												<input type="text" class="messengers-input" placeholder="Введите телефон, email">
+												<span class="title-select">Выберите тип</span>
+												<select class="messengers-select">
+													<option value="phone">Телефон стационарный</option>
+													<option value="mobile">Телефон мобильный</option>
+													<option value="viber">Viber</option>
+													<option value="whatsapp">Whatsapp</option>
+													<option value="telegram">Telegram</option>
+													<option value="email">Email</option>
+												</select>
+											
+												<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+												<button type="button" class="btn btn-secondary btn-dismiss"><i class="fas fa-times"></i></button>
+											</div>
+											
+										</div>
+										<a  class="lead-contacts-mes" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
+										<a  class="lead-contacts-mes" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="contacts-lead-block">
+								<div class="row-blocks-card">
+									<h3>3.Андрей Касабов
+										<button type="button" class="task-button-element edit-dop-contacts-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									</h3>
+									<span class="lead-position">оформляем на него</span>
+									<div class="wrap-input-control-element">
+										<label >Имя Фамилия 
+										<input type="text" placeholder="" class="input-edit-option input-family-option">
+										</label>
+										<label >Комментарий 
+										<input type="text" placeholder="" class="input-edit-option input-comment-option">
+										</label>
+										<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+										<button type="button" class="btn btn-secondary btn-dismiss"><i class="fas fa-times"></i></button>
+									</div>
+								</div>
+								<div class="row-blocks-card">
+									<div class="messengers-contacts">
+										<div class="control-messengers-contacts">
+											<div class="control-messengers-contacts-head">
+												<h2>Контакты
+													<button type="button" class="task-button-element show-contacts-body"  title="Добавить контакт"><i class="far fa-plus-square"></i></button>
+												</h2>
+											</div>
+											<div class="control-messengers-contacts-body">
+												<input type="text" class="messengers-input" placeholder="Введите телефон, email">
+												<span class="title-select">Выберите тип</span>
+												<select class="messengers-select">
+													<option value="phone">Телефон стационарный</option>
+													<option value="mobile">Телефон мобильный</option>
+													<option value="viber">Viber</option>
+													<option value="whatsapp">Whatsapp</option>
+													<option value="telegram">Telegram</option>
+													<option value="email">Email</option>
+												</select>
+											
+												<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+												<button type="button" class="btn btn-secondary btn-dismiss" ><i class="fas fa-times"></i></button>
+											</div>
+											
+										</div>
+										<a  class="lead-contacts-mes" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
+										<a  class="lead-contacts-mes" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="contacts-lead-block">
+								<div class="row-blocks-card">
+									<h3>3.Андрей Касабов
+										<button type="button" class="task-button-element edit-dop-contacts-lead"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+									</h3>
+									<span class="lead-position">оформляем на него</span>
+									<div class="wrap-input-control-element">
+										<label >Имя Фамилия 
+										<input type="text" placeholder="" class="input-edit-option input-family-option">
+										</label>
+										<label >Комментарий 
+										<input type="text" placeholder="" class="input-edit-option input-comment-option">
+										</label>
+										<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+										<button type="button" class="btn btn-secondary btn-dismiss" ><i class="fas fa-times"></i></button>
+									</div>
+								</div>
+								<div class="row-blocks-card">
+									<div class="messengers-contacts">
+										<div class="control-messengers-contacts">
+											<div class="control-messengers-contacts-head">
+												<h2>Контакты
+													<button type="button" class="task-button-element show-contacts-body"  title="Добавить контакт"><i class="far fa-plus-square"></i></button>
+												</h2>
+											</div>
+											<div class="control-messengers-contacts-body">
+												<input type="text" class="messengers-input" placeholder="Введите телефон, email">
+												<span class="title-select">Выберите тип</span>
+												<select class="messengers-select">
+													<option value="phone">Телефон стационарный</option>
+													<option value="mobile">Телефон мобильный</option>
+													<option value="viber">Viber</option>
+													<option value="whatsapp">Whatsapp</option>
+													<option value="telegram">Telegram</option>
+													<option value="email">Email</option>
+												</select>
+											
+												<button type="button" class="btn btn-primary btn-save"><i class="fas fa-check"></i></button>
+												<button type="button" class="btn btn-secondary btn-dismiss" ><i class="fas fa-times"></i></button>
+											</div>
+											
+										</div>
+										<a  class="lead-contacts-mes" href="tel:097-777-88-55"><i class="fas fa-phone"></i>097-777-88-55</a>
+										<a  class="lead-contacts-mes" href="mailto:mail@gmail.com"><i class="fas fa-envelope"></i>mail@gmail.com</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-12">
+										<div class="lead-block">
+								<div class="head-lead-block">
+									<h3>Дополнительные поля</h3>
+									<div class="div-control-status">
+										
+										<button type="button" class="task-button-element"  title="Добавить поле"><i class="far fa-plus-square"></i></button>
+										
+									</div>
+									
+										<table class="table table-lead-block">
+					 
+										  <tbody>
+											<tr>
+												<td>Рекл. группа:</td>
+												<td>Текст</td>
+												<td>
+													<div class="control-table">
+														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+											  <td>Рекл. источник: </td>
+											  <td>Текст</td>
+											  <td>
+											  	<div class="control-table">
+														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											<tr>
+											  <td>Препятствия:</td>
+											  <td>Текст</td>
+											  <td>
+											  	<div class="control-table">
+														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											<tr>
+											  <td>Препятствия:</td>
+											  <td>нет</td>
+											  <td>
+											  	<div class="control-table">
+														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											<tr>
+											  <td>Встреча:</td>
+											  <td>была</td>
+											  <td>
+											  	<div class="control-table">
+														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											<tr>
+											  <td>Агентство недвижимости:</td>
+											  <td></td>
+											  <td>
+											  	<div class="control-table">
+														<button type="button" class="task-button-element"  title="Редактировать"><i class="fas fa-pencil-alt"></i></button>
+														<button type='button' title="Удалить" class="task-button-element remove-file-task-button"><i class="fas fa-trash-alt"></i></button>
+													</div>
+											  </td>
+											</tr>
+											
+										  </tbody>
+										</table>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+	  </div>
+	</div>
+  </div>
+</div>
+<div class="modal fade modal-history-lead" id="modal-history-lead" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modal-edit-taskTitle">История лида</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+			<div class="create_setup create_setup_history">
+										
+				<ul class="history-list-control">
+					<li>Статус был изменен на Бронь на сутки.<span class="time">28.09.2018 15:55</span></li>
+					<li>New unit was created.<span class="time">28.09.2018 15:55</span></li>
+					<li>New unit was created.<span class="time">28.09.2018 15:55</span></li>
+					<li>New unit was created.<span class="time">28.09.2018 15:55</span></li>
+					<li>Статус был изменен на Бронь на сутки.<span class="time">28.09.2018 15:55</span></li>
+					<li>New unit was created.<span class="time">28.09.2018 15:55</span></li>
+					<li>New unit was created.<span class="time">28.09.2018 15:55</span></li>
+					<li>New unit was created.<span class="time">28.09.2018 15:55</span></li>
+					<li>Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>New unit was created.<span class="time">4 дня назад</span></li>
+					<li>Статус был изменен на Бронь на сутки.<span class="time">2 дня назад</span></li>
+					
+				</ul>
+			</div>
+	  </div>
+	  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+	  </div>
+	</div>
+  </div>
+</div>
 <div class="modal fade modal-add-lead" id="modal-add-lead" tabindex="-1" role="dialog" aria-labelledby="modal-edit-taskTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
 	<div class="modal-content">
@@ -1186,18 +1904,6 @@
 				  <option value="4">Есть шорт-лист квартир</option>
 				  <option value="5">Переговоры по конкурентным квартирам</option>
 				</select>
-			</div>
-			<div class="form-group photo-user-add">
-				<div class="user-form">
-					<img src="img/default-user.jpg">
-				</div>
-				<div class="block-form-photo">
-					<label for="photo-modal-add-lead">Прикрепить фото клиента</label>
-					<input type="file" class="form-control-file" id="photo-modal-add-lead">
-				</div>
-			</div>
-			<div class="form-group">
-				
 			</div>
 			<div class="form-group">
 				<p>Дата: <span>25.06.2018</span></p>

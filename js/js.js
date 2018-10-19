@@ -2769,13 +2769,10 @@ $('.but-lead-status-edit').click(function(event) {
 	if ($(this).children().hasClass('fa-pencil-alt')) {
 		$(this).children().removeClass('fa-pencil-alt').addClass('fa-save');
 		$(this).prev('.form-check').hide();
-		$(this).next('.remove-file-task-button').hide();
 	} else {
 		$(this).children().removeClass('fa-save').addClass('fa-pencil-alt');
 		$(this).prev('.form-check').show();
-		$(this).next('.remove-file-task-button').show();
 	}
-	
 	var seleStatus = $(this).closest('.card-header').children('.title-accord-clients-right').children().children('.status-head-lead');
 	var sele = seleStatus.prop('disabled');
 	if (sele == true) {
@@ -2783,15 +2780,13 @@ $('.but-lead-status-edit').click(function(event) {
 	} else {
 		seleStatus.prop('disabled', true)
 	}
-
-	
 });
+//Добавление контактов в лидах
 $('.control-messengers-contacts-head .show-contacts-body').click(function(){
 	$(this).closest('.control-messengers-contacts-head').next('.control-messengers-contacts-body').show();		
 	
 });
-		
-
+// Кнопка сохранить в контактах
 $('.messengers-contacts .btn-save').click(function(){
 	var selVal = $(this).prev().val();
 	var inpVal = $(this).prev().prev().prev().val();
@@ -2806,11 +2801,12 @@ $('.messengers-contacts .btn-save').click(function(){
 	var elHtml =' <a  class="lead-contacts-mes" href="mailto:mail@gmail.com">' + icon + inpVal + '</a>';
 	$(this).closest('.messengers-contacts').append(elHtml);
 });
+// Кнопка закрыть в контактах
 $('.messengers-contacts .btn-dismiss').click(function(){
 	$(this).closest('.control-messengers-contacts-body').hide();
 });
 
-
+// Иконки мэсенджеров 
 function iconMessengers(mes) {
 
 		switch (mes) {
@@ -2836,8 +2832,110 @@ function iconMessengers(mes) {
 		}
 		return mes
 }
+// Показ истории лида
+$('.view-history-lead').click(function(){
+		$('#modal-history-lead').modal('show');
+		
+});
+// Добавление доп контакта в лиде
+$('.add-lead-dop-contact').click(function(event) {
+	var s = $(this).parent().next('.wrap-input-control-element');
+	s.show();
+	console.log(s);
+});
+// Кнопка сохранить в доп контактах
+$('.more-contacts .wrap-input-control-element .btn-input-control-save').click(function(){
+	$(this).parent().hide();
+});
+// Кнопка закрыть в доп контактах
+$('.more-contacts .wrap-input-control-element .btn-input-control-dismis').click(function(){
+	$(this).parent().hide();
+});
+//Редактирование доп кантактов
+$('.contacts-lead-block .edit-dop-contacts-lead').click(function(event) {
+	var s = $(this);
+	s.parent().next().next('.wrap-input-control-element').show();
+	var t = s.closest('.row-blocks-card').children();
+	var family = t.filter('h3').text();
+	var comment = t.filter('.lead-position').text();
+	t.filter('.wrap-input-control-element').find('.input-family-option').val(family);
+	t.filter('.wrap-input-control-element ').find('.input-comment-option').val(comment);
+	console.log(t);
+	console.log(t.filter('.wrap-input-control-element').find('.input-family-option'));
+
+});
+//Редактирование доп кантактов кнопка сохранить
+$('.contacts-lead-block .btn-save').click(function(event) {
+	var s = $(this).parent('.wrap-input-control-element').hide();
+});
+//Редактирование доп кантактов кнопка закрыть
+$('.contacts-lead-block .btn-dismiss').click(function(event) {
+	var s = $(this).parent('.wrap-input-control-element').hide();
+});
 
 
+// Показывание доп контактов лида в модалке
+$('.view-dop-contacts-lead').click(function(){
+		$('#modal-dop-contacts-lead').modal('show');
+		
+});
+// Кнопка перенести сделку из интереса в сделке
+$('.jump-sale-block').click(function(){
+		$('#modal-jump-lead').modal('show');
+});
+// редактирование сделки в лиде
+$('.edit-deal-lead').click(function(){
+		$('#modal-jump-lead').modal('show');
+		
+});
+// Редактирование имени и комментария лида
+$('.button-edit-name-lead').click(function(event) {
+	$(this).next().next().next('.wrap-input-control-element').show();
+	console.log();
+});
+
+$('.sort-up-button').hover(function() {
+	$(this).next().hide();
+
+}, function() {
+	$(this).next().show();
+});
+
+$('.sort-down-button').hover(function() {
+	$(this).prev().hide();
+
+}, function() {
+	$(this).prev().show();
+});
+
+$('.sort-up-button').click(function(event) {
+		console.log('up');
+});
+$('.sort-down-button').click(function(event) {
+		console.log('down');
+});
+//Добавить параметр в юните
+$('.dop-description-unit .add-dop-attr-unit').click(function(event) {
+	$(this).next('.wrap-input-control-element').show();
+});
+$('.dop-description-unit .wrap-input-control-element .btn-save').click(function(event) {
+	$(this).parent('.wrap-input-control-element').hide();
+});
+$('.dop-description-unit .wrap-input-control-element .btn-dismiss').click(function(event) {
+	$(this).parent('.wrap-input-control-element').hide();
+});
+
+
+//Показать акцию
+
+$('.action-unit-shah .action-shah').click(function(event) {
+	$('.modal-action-shah').modal('show');
+});
+
+//Новый лид в лидах
+$('.add-lead-header').click(function(event) {
+	$('.modal-add-lead').modal('show');
+});
 
 //main	
 });
